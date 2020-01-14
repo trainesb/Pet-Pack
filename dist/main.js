@@ -11279,6 +11279,28 @@ const Product = function() {
             }
         });
     });
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("div#products div.product-card button.delete-product").click(function (event) {
+        event.preventDefault();
+
+        let id = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('id');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+            url: "post/delete-product.php",
+            data: { id: id },
+            method: "POST",
+            success: function (data) {
+                let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
+                if(json.ok) {
+                    window.location.reload();
+                } else {
+                    alert(json.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                alert('Error: ' + error);
+            }
+        });
+    });
 };
 
 /***/ }),

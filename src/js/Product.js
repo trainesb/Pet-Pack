@@ -31,4 +31,26 @@ export const Product = function() {
             }
         });
     });
+
+    $("div#products div.product-card button.delete-product").click(function (event) {
+        event.preventDefault();
+
+        let id = $(this).attr('id');
+        $.ajax({
+            url: "post/delete-product.php",
+            data: { id: id },
+            method: "POST",
+            success: function (data) {
+                let json = parse_json(data);
+                if(json.ok) {
+                    window.location.reload();
+                } else {
+                    alert(json.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                alert('Error: ' + error);
+            }
+        });
+    });
 };
