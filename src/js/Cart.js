@@ -3,6 +3,12 @@ import {parse_json} from './parse_json';
 
 export const Cart = function() {
 
+    $("button.check-out").click(function() {
+       if(confirm("Continue to check out?")) {
+           window.location.assign("./checkout.php");
+       }
+    });
+
     $("div#cart p.qty input").change(function (event) {
         event.preventDefault();
 

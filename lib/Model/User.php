@@ -35,7 +35,7 @@ class User {
 
     public function isAdmin() { return $this->role === self::ADMIN; }
 
-    public function isMember() { return $this->role === self::MEMBER; }
+    public function isMember() { return $this->role === self::MEMBER || self::ADMIN; }
 
     public function getId() { return $this->id; }
 

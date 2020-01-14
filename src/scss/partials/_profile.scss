@@ -7,4 +7,9 @@ div#profile {
     width: 33%;
     display: inline-block;
   }
+
+  div.add-address,
+  div.add-paymentCard {
+    display: none;
+  }
 }

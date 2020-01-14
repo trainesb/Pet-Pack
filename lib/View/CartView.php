@@ -33,6 +33,7 @@ class CartView extends View {
         $html = <<<HTML
 <div class="cart-wrapper">
     <h1>Cart</h1>
+    <button class="check-out">Check Out</button>
     <hr>
     <div class="cart-items">
         <ul class="cart">
@@ -63,6 +64,7 @@ HTML;
     <div class="costs">
         <p class="cost">Total Cost: $$cost</p>
     </div>
+    <button class="check-out">Check Out</button>
 </div>
 HTML;
         return $html;

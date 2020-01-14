@@ -7,6 +7,7 @@ import { AdminNav } from "./AdminNav";
 import { Members } from "./Members";
 import { Product } from "./Product";
 import { Cart } from "./Cart";
+import { Profile } from "./Profile";
 
 $(document).ready(function () {
     new Login();
@@ -14,4 +15,5 @@ $(document).ready(function () {
     new Members();
     new Product();
     new Cart();
+    new Profile();
 });
