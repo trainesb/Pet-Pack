@@ -1,0 +1,10 @@
+div#profile {
+  text-align: center;
+
+  div.user-card,
+  div.address-wrapper,
+  div.paymentCard-wrapper {
+    width: 33%;
+    display: inline-block;
+  }
+}

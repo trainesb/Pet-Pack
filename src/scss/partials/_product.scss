@@ -1,0 +1,38 @@
+div.product-wrapper {
+  div.product-head {
+    text-align: center;
+
+    p, h1 {
+      display: inline-block;
+    }
+  }
+
+  div.product-info {
+    position: relative;
+
+    div.left,
+    div.right {
+      width: 45%;
+      display: inline-block;
+    }
+
+    div.right {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  div.product-foot {
+    text-align: center;
+
+    div.description-card,
+    div.shipping-card,
+    div.reviews-card {
+      width: 33%;
+      display: inline-block;
+    }
+  }
+}

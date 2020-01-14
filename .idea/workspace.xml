@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1WEOIv5cgfOw03pKxlgUmUNtJvq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/img" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\petpack\dist\img" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="" />
+      <created>1578711210849</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578711210849</updated>
+      <workItem from="1578711212499" duration="31000" />
+      <workItem from="1578713364340" duration="8554000" />
+      <workItem from="1578730631150" duration="4704000" />
+      <workItem from="1578962015191" duration="49000" />
+      <workItem from="1578963829229" duration="11069000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2068" y="-321" key="#Notifications" timestamp="1578711222387">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2068" y="-321" key="#Notifications/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578711222387" />
+    <state x="2246" y="216" key="#com.intellij.ide.util.MemberChooser" timestamp="1578731136046">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2246" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578731136046" />
+    <state x="1920" y="-44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578972625779">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="1920" y="-44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578972625779" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578969529376">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578969529376" />
+    <state x="2192" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578734494365">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2192" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578734494365" />
+    <state x="2225" y="472" key="ComposerInitDialogKey" timestamp="1578713676906">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2225" y="472" key="ComposerInitDialogKey/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578713676906" />
+    <state x="2097" y="333" key="EditFileWatcherDialog" timestamp="1578719377455">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2097" y="333" key="EditFileWatcherDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578719377455" />
+    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1578972115703">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578972115703" />
+    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1578972514107">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578972514107" />
+    <state x="1963" y="203" key="SettingsEditor" timestamp="1578719378761">
+      <screen x="1920" y="-853" width="1080" height="1880" />
+    </state>
+    <state x="1963" y="203" key="SettingsEditor/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578719378761" />
+  </component>
+</project>

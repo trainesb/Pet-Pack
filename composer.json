@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Lib\\": "lib",
+      "API\\": "lib/API",
+      "Controller\\": "lib/Controller",
+      "Model\\": "lib/Model",
+      "View\\": "lib/View"
+    }
+  }
+}
