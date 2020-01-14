@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Controller/DeleteProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/delete-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/CreateProductView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/CreateProductView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProductsView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/ProductsView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Product.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
       <workItem from="1578713364340" duration="8554000" />
       <workItem from="1578730631150" duration="4704000" />
       <workItem from="1578962015191" duration="49000" />
-      <workItem from="1578963829229" duration="19521000" />
+      <workItem from="1578963829229" duration="19932000" />
     </task>
     <servers />
   </component>
