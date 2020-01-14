@@ -43,6 +43,7 @@ class ProfileView extends View {
     public function address() {
         $html = '<div class="address-wrapper">';
         $html .= '<h2>Addresses</h2>';
+        $html .= '<button id="add-address">Add Address</button>';
         if(!empty($this->address)) {
             foreach ($this->address as $address) {
                 $address = new Address($address);
@@ -64,13 +65,52 @@ class ProfileView extends View {
 HTML;
             }
         }
-        $html .= '</div>';
+        $html .= <<<HTML
+<div id="" class="add-address">
+    <form id="add-address" class="$this->id">
+        <fieldset>
+            <legend>Add Address</legend>
+            <p>
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" placeholder="First Name"/>
+            </p>
+            <p>
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" placeholder="Last Name"/>
+            </p>
+            <p>
+                <label for="address1">Address Line 1: </label>
+                <input type="text" name="address1" placeholder="Address..."/>
+            </p>
+            <p>
+                <label for="address2">Address Line 2: </label>
+                <input type="text" name="address2" placeholder="..."/>
+            </p>
+            <p>
+                <label for="city">City: </label>
+                <input type="text" name="city" placeholder="City"/>
+            </p>
+            <p>
+                <label for="state">State: </label>
+                <input type="text" name="state" placeholder="State"/>
+            </p>
+            <p>
+                <label for="zip">Zip: </label>
+                <input type="number" name="zip" value="00000"/>
+            </p>
+            <p><input type="submit" value="Add"/></p>
+        </fieldset>
+    </form>
+</div>
+</div>
+HTML;
         return $html;
     }
 
     public function paymentCard() {
         $html = '<div class="paymentCard-wrapper">';
         $html .= '<h2>Payment Cards</h2>';
+        $html .= '<button id="add-paymentCard">Add Payment Card</button>';
         if(!empty($this->paymentCards)) {
             foreach ($this->paymentCards as $paymentCard) {
                 $paymentCard = new PaymentCard($paymentCard);
@@ -99,7 +139,37 @@ HTML;
 </div>
 HTML;
         }
-        $html .= '</div>';
+        $html .= <<<HTML
+<div id="" class="add-paymentCard">
+    <form id="add-payment" class="$this->id">
+        <fieldset>
+            <legend>Add Payment</legend>
+            <p>
+                <label for="alias">Alias: </label>
+                <input type="text" name="alias" placeholder="Alias"/>
+            </p>
+            <p>
+                <label for="fullName">Full Name: </label>
+                <input type="text" name="fullName" placeholder="Full Name"/>
+            </p>
+            <p>
+                <label for="cardNumber">Card Number: </label>
+                <input type="number" name="cardNumber" value="0000 0000 0000 0000"/>
+            </p>
+            <p>
+                <label for="vcc">VCC: </label>
+                <input type="number" name="vcc" value="000"/>
+            </p>
+            <p>
+                <label for="zip">Zip: </label>
+                <input type="number" name="zip" value="00000"/>
+            </p>
+            <p><input type="submit" value="Add"/></p>
+        </fieldset>
+    </form>
+</div>
+</div>
+HTML;
         return $html;
     }
 
