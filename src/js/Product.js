@@ -7,7 +7,7 @@ export const Product = function() {
         event.preventDefault();
 
         let name = $("div.product-head h1.name").text();
-        let qty = $(this).serialize();
+        let qty = $("input#qty").val();
         let id = $("div.product-wrapper").attr('id');
 
         $.ajax({
@@ -28,6 +28,28 @@ export const Product = function() {
             },
             error: function(xhr, status, error) {
                 alert("Error: " + error);
+            }
+        });
+    });
+
+    $("div#products div.product-card button.delete-product").click(function (event) {
+        event.preventDefault();
+
+        let id = $(this).attr('id');
+        $.ajax({
+            url: "post/delete-product.php",
+            data: { id: id },
+            method: "POST",
+            success: function (data) {
+                let json = parse_json(data);
+                if(json.ok) {
+                    window.location.reload();
+                } else {
+                    alert(json.message);
+                }
+            },
+            error: function (xhr, status, error) {
+                alert('Error: ' + error);
             }
         });
     });

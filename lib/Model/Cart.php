@@ -12,13 +12,29 @@ class Cart {
     private $shipping = 0.0;
 
     public function addToCart($name, $product, $qty) {
+        $price = $product->getRegularPrice();
+
         // Check if already in cart
-        if(isset($this->cart[$name])) {
-            $this->cart[$name]["qty"] += $qty;
-        }else {
-            // Not in cart so add it
-            array_push($this->cart, [$name => ["product" => $product, "qty" => $qty]]);
+        $i = 0;
+        foreach ($this->cart as $item) {
+            if($item["name"] === $name) {
+                if($this->cart[$i]["qty"] < $qty) {
+                    $this->cart[$i]["qty"] = $qty;
+                    $this->cost += $price;
+                } else {
+                    $this->cart[$i]["qty"] = $qty;
+                    $this->cost -= $price;
+                }
+                return;
+            }
+            $i += 1;
         }
+
+        $cost = $price * $qty;
+        $this->cost += $cost;
+
+        // Not in cart so add it
+        array_push($this->cart, ["name" => $name, "product" => $product, "qty" => $qty]);
     }
 
     public function getCart() { return $this->cart; }
