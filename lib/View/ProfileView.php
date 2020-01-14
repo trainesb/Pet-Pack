@@ -19,6 +19,11 @@ class ProfileView extends View {
         parent::__construct($site, $user);
         $this->setTitle("Profile");
 
+        if(!$user->isMember()) {
+            header("location: " . $this->getProtectRedirect());
+            exit;
+        }
+
         $this->id = $user->getid();
 
         $addressTable = new AddressTable($site);

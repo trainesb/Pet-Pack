@@ -11113,6 +11113,12 @@ __webpack_require__.r(__webpack_exports__);
 
 const Cart = function() {
 
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("button.check-out").click(function() {
+       if(confirm("Continue to check out?")) {
+           window.location.assign("./checkout.php");
+       }
+    });
+
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("div#cart p.qty input").change(function (event) {
         event.preventDefault();
 

@@ -15,6 +15,11 @@ class MembersView extends View {
         parent::__construct($site, $user);
         $this->setTitle("Members");
 
+        if(!$this->protect($site, $user)) {
+            header("location: " . $this->getProtectRedirect());
+            exit;
+        }
+
         $members = new UserTable($site);
         $members = $members->getAll();
         foreach ($members as $member) {
