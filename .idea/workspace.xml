@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Controller/AddAddressController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Controller/AddPaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/add-address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/add-payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/AddressTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/API/AddressTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/PaymentCardTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/API/PaymentCardTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/ProfileView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/CartView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/CartView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/post/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +86,7 @@
       <workItem from="1578713364340" duration="8554000" />
       <workItem from="1578730631150" duration="4704000" />
       <workItem from="1578962015191" duration="49000" />
-      <workItem from="1578963829229" duration="24282000" />
+      <workItem from="1578963829229" duration="24844000" />
     </task>
     <servers />
   </component>
