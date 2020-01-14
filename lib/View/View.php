@@ -83,7 +83,7 @@ HTML;
 
         $html .= '</ul></nav>';
 
-        if($this->user->isAdmin()) { $html .= $this->adminNav(); }
+        if(($this->user) && $this->user->isAdmin()) { $html .= $this->adminNav(); }
         return $html;
     }
 

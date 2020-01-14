@@ -37,7 +37,7 @@ class LoginView extends View {
 
     public function presentForm() {
         return <<<HTML
-<form id="login" method="post" action="post/login.php">
+<form id="loginForm" method="post" action="post/login.php">
     <fieldset>
         <legend>LoginView</legend>
 

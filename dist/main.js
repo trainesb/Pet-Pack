@@ -11113,22 +11113,17 @@ __webpack_require__.r(__webpack_exports__);
 
 const Login = function() {
 
-    var form = jquery__WEBPACK_IMPORTED_MODULE_0___default()("#login");
-    form.submit(function (event) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("#loginForm").submit(function (event) {
         event.preventDefault();
 
         jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
             url: "post/login.php",
-            data: form.serialize(),
+            data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
             method: "POST",
             success: function(data) {
-                var json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
+                let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
                 if(json.ok) {
-                    if(json.staff) {
-                        window.location.assign("./staff.php");
-                    } else {
-                        window.location.assign('./');
-                    }
+                    window.location.assign('./');
                 } else {
                     alert(json.message);
                 }
@@ -11187,6 +11182,56 @@ const Members = function() {
 
 /***/ }),
 
+/***/ "./src/js/Product.js":
+/*!***************************!*\
+  !*** ./src/js/Product.js ***!
+  \***************************/
+/*! exports provided: Product */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return Product; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const Product = function() {
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("form#product-order").submit(function (event) {
+        event.preventDefault();
+
+        let name = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.product-head h1.name").text();
+        let qty = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize();
+        let id = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.product-wrapper").attr('id');
+
+        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+            url: "post/product.php",
+            data: {
+                name: name,
+                qty: qty,
+                id: id
+            },
+            method: "POST",
+            success: function(data) {
+                let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
+                if(json.ok) {
+                    window.location.assign("./cart.php");
+                } else {
+                    alert(json.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                alert("Error: " + error);
+            }
+        });
+    });
+};
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -11203,6 +11248,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login */ "./src/js/Login.js");
 /* harmony import */ var _AdminNav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminNav */ "./src/js/AdminNav.js");
 /* harmony import */ var _Members__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Members */ "./src/js/Members.js");
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Product */ "./src/js/Product.js");
+
 
 
 
@@ -11215,6 +11262,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Login__WEBPACK_IMPORTED_MODULE_2__["Login"]();
     new _AdminNav__WEBPACK_IMPORTED_MODULE_3__["AdminNav"]();
     new _Members__WEBPACK_IMPORTED_MODULE_4__["Members"]();
+    new _Product__WEBPACK_IMPORTED_MODULE_5__["Product"]();
 });
 
 /***/ }),

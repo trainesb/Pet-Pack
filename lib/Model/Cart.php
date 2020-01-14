@@ -11,6 +11,16 @@ class Cart {
     private $cost = 0.0;
     private $shipping = 0.0;
 
+    public function addToCart($name, $product, $qty) {
+        // Check if already in cart
+        if(isset($this->cart[$name])) {
+            $this->cart[$name]["qty"] += $qty;
+        }else {
+            // Not in cart so add it
+            array_push($this->cart, [$name => ["product" => $product, "qty" => $qty]]);
+        }
+    }
+
     public function getCart() { return $this->cart; }
 
     public function setCart($cart) { $this->cart = $cart; }

@@ -3,22 +3,17 @@ import {parse_json} from './parse_json';
 
 export const Login = function() {
 
-    var form = $("#login");
-    form.submit(function (event) {
+    $("#loginForm").submit(function (event) {
         event.preventDefault();
 
         $.ajax({
             url: "post/login.php",
-            data: form.serialize(),
+            data: $(this).serialize(),
             method: "POST",
             success: function(data) {
-                var json = parse_json(data);
+                let json = parse_json(data);
                 if(json.ok) {
-                    if(json.staff) {
-                        window.location.assign("./staff.php");
-                    } else {
-                        window.location.assign('./');
-                    }
+                    window.location.assign('./');
                 } else {
                     alert(json.message);
                 }
