@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot div.description-card,\n  div.product-wrapper div.product-foot div.shipping-card,\n  div.product-wrapper div.product-foot div.reviews-card {\n    width: 33%;\n    display: inline-block; }\n\ndiv.members-wrapper {\n  text-align: center; }\n  div.members-wrapper div.user-card {\n    position: relative;\n    display: inline-block;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n    text-align: center;\n    margin: 1em; }\n    div.members-wrapper div.user-card button.delete-user {\n      position: absolute;\n      right: 0.5em;\n      top: 0.5em;\n      background-color: #fff;\n      border: none; }\n    div.members-wrapper div.user-card button.delete-user:hover,\n    div.members-wrapper div.user-card button.delete-user:focus {\n      background-color: #000;\n      color: #fff; }\n\ndiv#profile {\n  text-align: center; }\n  div#profile div.user-card,\n  div#profile div.address-wrapper,\n  div#profile div.paymentCard-wrapper {\n    width: 33%;\n    display: inline-block; }\n", ""]);
+exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot div.description-card,\n  div.product-wrapper div.product-foot div.shipping-card,\n  div.product-wrapper div.product-foot div.reviews-card {\n    width: 33%;\n    display: inline-block; }\n\ndiv.members-wrapper {\n  text-align: center; }\n  div.members-wrapper div.user-card {\n    position: relative;\n    display: inline-block;\n    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n    text-align: center;\n    margin: 1em; }\n    div.members-wrapper div.user-card button.delete-user {\n      position: absolute;\n      right: 0.5em;\n      top: 0.5em;\n      background-color: #fff;\n      border: none; }\n    div.members-wrapper div.user-card button.delete-user:hover,\n    div.members-wrapper div.user-card button.delete-user:focus {\n      background-color: #000;\n      color: #fff; }\n\ndiv#profile {\n  text-align: center; }\n  div#profile div.user-card,\n  div#profile div.address-wrapper,\n  div#profile div.paymentCard-wrapper {\n    width: 33%;\n    display: inline-block; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11095,6 +11095,57 @@ const AdminNav = function() {
 
 /***/ }),
 
+/***/ "./src/js/Cart.js":
+/*!************************!*\
+  !*** ./src/js/Cart.js ***!
+  \************************/
+/*! exports provided: Cart */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Cart", function() { return Cart; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const Cart = function() {
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("div#cart p.qty input").change(function (event) {
+        event.preventDefault();
+
+        let qty = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).val();
+        let id = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('id');
+        let name = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().prev().prev().text();
+
+        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+            url: "post/product.php",
+            data: {
+                name: name,
+                qty: qty,
+                id: id
+            },
+            method: "POST",
+            success: function(data) {
+                let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
+                if(json.ok) {
+                    console.log("Updated");
+                    window.location.reload();
+                } else {
+                    alert(json.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                alert("Error: " + error);
+            }
+        });
+    });
+};
+
+/***/ }),
+
 /***/ "./src/js/Login.js":
 /*!*************************!*\
   !*** ./src/js/Login.js ***!
@@ -11204,7 +11255,7 @@ const Product = function() {
         event.preventDefault();
 
         let name = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.product-head h1.name").text();
-        let qty = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize();
+        let qty = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#qty").val();
         let id = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.product-wrapper").attr('id');
 
         jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
@@ -11249,6 +11300,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AdminNav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminNav */ "./src/js/AdminNav.js");
 /* harmony import */ var _Members__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Members */ "./src/js/Members.js");
 /* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Product */ "./src/js/Product.js");
+/* harmony import */ var _Cart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Cart */ "./src/js/Cart.js");
+
 
 
 
@@ -11263,6 +11316,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _AdminNav__WEBPACK_IMPORTED_MODULE_3__["AdminNav"]();
     new _Members__WEBPACK_IMPORTED_MODULE_4__["Members"]();
     new _Product__WEBPACK_IMPORTED_MODULE_5__["Product"]();
+    new _Cart__WEBPACK_IMPORTED_MODULE_6__["Cart"]();
 });
 
 /***/ }),

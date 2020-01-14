@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/partials/_cart.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Model/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Cart.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/CartView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/CartView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/LoginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/LoginView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/localize.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/localize.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +48,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1WEOIv5cgfOw03pKxlgUmUNtJvq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -94,7 +94,7 @@
       <workItem from="1578713364340" duration="8554000" />
       <workItem from="1578730631150" duration="4704000" />
       <workItem from="1578962015191" duration="49000" />
-      <workItem from="1578963829229" duration="14628000" />
+      <workItem from="1578963829229" duration="17729000" />
     </task>
     <servers />
   </component>

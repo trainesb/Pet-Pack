@@ -1,14 +1,14 @@
 import $ from 'jquery';
 import {parse_json} from './parse_json';
 
-export const Product = function() {
+export const Cart = function() {
 
-    $("form#product-order").submit(function (event) {
+    $("div#cart p.qty input").change(function (event) {
         event.preventDefault();
 
-        let name = $("div.product-head h1.name").text();
-        let qty = $("input#qty").val();
-        let id = $("div.product-wrapper").attr('id');
+        let qty = $(this).val();
+        let id = $(this).attr('id');
+        let name = $(this).parent().prev().prev().text();
 
         $.ajax({
             url: "post/product.php",
@@ -21,7 +21,8 @@ export const Product = function() {
             success: function(data) {
                 let json = parse_json(data);
                 if(json.ok) {
-                    window.location.assign("./cart.php");
+                    console.log("Updated");
+                    window.location.reload();
                 } else {
                     alert(json.message);
                 }
