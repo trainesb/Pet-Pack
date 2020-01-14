@@ -38,18 +38,30 @@ class CheckoutView extends View {
 
     public function present() {
         echo $this->head();
-
-        echo '<div id="checkout">';
+        $user = $this->getUser();
+        echo '<div id="checkout" class="'.$user->getId().'">';
         echo $this->nav();
+        echo '<button class="submit-checkout">Finish Checkout</button>';
         echo $this->address();
         echo $this->paymentCard();
         echo $this->product();
+        echo '<button class="submit-checkout">Finish Checkout</button>';
         echo '</div>';
         echo $this->footer();
     }
 
+    public function total() {
+        $total = $this->cart->getCost();
+        return <<<HTML
+<div class="total-cost">
+    <h2>Total: $<span id="totalCost">$total</span></h2>
+</div>
+HTML;
+    }
+
     public function address() {
         $address = new Address($this->address);
+        $id = $address->getId();
         $name = $address->getFullName();
         $address1 =  $address->getAddress1();
         $city = $address->getCity();
@@ -57,28 +69,31 @@ class CheckoutView extends View {
         $zip = $address->getZip();
 
         return <<<HTML
-<div class="address">
+<div id="$id" class="address">
     <h2>Shipping Address</h2>
     <hr>
     <p class="name">$name</p>
     <p class="address1">$address1</p>
     <p class="city state zip">$city, $state $zip</p>
 </div>
+<hr>
 HTML;
     }
 
     public function paymentCard() {
         $paymentCard = new PaymentCard($this->paymentCard);
+        $id = $paymentCard->getId();
         $alias = $paymentCard->getAlias();
         $name = $paymentCard->getFullName();
 
         return <<<HTML
-<div class="payment">
+<div id="$id" class="payment">
     <h2>Payment</h2>
     <hr>
     <p class="alias">$alias</p>
     <p class="name">$name</p>
 </div>
+<hr>
 HTML;
     }
 
@@ -91,10 +106,11 @@ HTML;
                 $name = $item['name'];
                 $product = $item['product'];
                 $qty = $item['qty'];
+                $id = $product->getId();
                 $productImg = $product->getProductImg();
 
                 $html .= <<<HTML
-<div class="product">
+<div id="$id" class="product">
     <p class="name">$name</p>
     <p class="productImg"><img src="$productImg" /></p>
     <p class="qty">Qty: $qty</p>

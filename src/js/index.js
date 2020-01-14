@@ -8,6 +8,7 @@ import { Members } from "./Members";
 import { Product } from "./Product";
 import { Cart } from "./Cart";
 import { Profile } from "./Profile";
+import { Checkout } from "./Checkout";
 
 $(document).ready(function () {
     new Login();
@@ -16,4 +17,5 @@ $(document).ready(function () {
     new Product();
     new Cart();
     new Profile();
+    new Checkout();
 });
