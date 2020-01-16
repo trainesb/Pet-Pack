@@ -8,6 +8,7 @@ use API\AddressTable;
 use API\PaymentCardTable;
 use Model\Address;
 use Model\PaymentCard;
+use View\Form\CreateAddress;
 
 class ProfileView extends View {
 
@@ -40,130 +41,16 @@ class ProfileView extends View {
         echo '<div id="profile">';
         echo $this->profile();
         echo $this->address();
-        echo $this->paymentCard();
         echo '</div>';
         echo $this->footer();
     }
 
     public function address() {
-        $html = '<div class="address-wrapper">';
-        $html .= '<h2>Addresses</h2>';
-        $html .= '<button id="add-address">Add Address</button>';
-        if(!empty($this->address)) {
-            foreach ($this->address as $address) {
-                $address = new Address($address);
-                $id = $address->getId();
-                $userId = $address->getUserId();
-                $fullName = $address->getFullName();
-                $address1 = $address->getAddress1();
-                $address2 = $address->getAddress2();
-                $city = $address->getCity();
-                $state = $address->getState();
-                $zip = $address->getZip();
-
-                $html .= <<<HTML
-<div id="$id" class="address-card">
-    <p class="fullName">$fullName</p>
-    <p class="address1">$address1</p>
-    <p class="city state zip">$city, $state $zip</p>
-</div>
-HTML;
-            }
-        }
-        $html .= <<<HTML
-<div id="" class="add-address">
-    <form id="add-address" class="$this->id">
-        <fieldset>
-            <legend>Add Address</legend>
-            <p>
-                <label for="firstName">First Name: </label>
-                <input type="text" name="firstName" placeholder="First Name"/>
-            </p>
-            <p>
-                <label for="lastName">Last Name: </label>
-                <input type="text" name="lastName" placeholder="Last Name"/>
-            </p>
-            <p>
-                <label for="address1">Address Line 1: </label>
-                <input type="text" name="address1" placeholder="Address..."/>
-            </p>
-            <p>
-                <label for="address2">Address Line 2: </label>
-                <input type="text" name="address2" placeholder="..."/>
-            </p>
-            <p>
-                <label for="city">City: </label>
-                <input type="text" name="city" placeholder="City"/>
-            </p>
-            <p>
-                <label for="state">State: </label>
-                <input type="text" name="state" placeholder="State"/>
-            </p>
-            <p>
-                <label for="zip">Zip: </label>
-                <input type="number" name="zip" value="00000"/>
-            </p>
-            <p><input type="submit" value="Add"/></p>
-        </fieldset>
-    </form>
-</div>
-</div>
-HTML;
-        return $html;
+        $createAddress = new CreateAddress();
+        return $createAddress->present();
     }
 
-    public function paymentCard() {
-        $html = '<div class="paymentCard-wrapper">';
-        $html .= '<h2>Payment Cards</h2>';
-        $html .= '<button id="add-paymentCard">Add Payment Card</button>';
-        if(!empty($this->paymentCards)) {
-            foreach ($this->paymentCards as $paymentCard) {
-                $paymentCard = new PaymentCard($paymentCard);
-                $id = $paymentCard->getId();
-                $userId = $paymentCard->getUserId();
-                $alias = $paymentCard->getAlias();
-                $fullName = $paymentCard->getFullName();
-                $cardNumber = $paymentCard->getCardNumber();
-                $vcc = $paymentCard->getVcc();
-                $zip = $paymentCard->getZip();
 
-                $html .= <<<HTML
-<div id="$id" class="paymentCard-card">
-    <p class="alias">$alias</p>
-    <p class="fullName">$fullName</p>
-    <p class="cardNumber">$cardNumber</p>
-</div>
-HTML;
-            }
-        } else {
-            $html .= <<<HTML
-<div id="" class="paymentCard-card">
-    <p class="alias">Alias</p>
-    <p class="fullName">Full Name</p>
-    <p class="cardNumber">Card Number</p>
-</div>
-HTML;
-        }
-        $html .= <<<HTML
-<div id="" class="add-paymentCard">
-    <form method="post" id="payment-form">
-        <div class="form-row">
-            <label for="card-element">Credit or debit card</label>
-            <div id="card-element">
-            <!-- A Stripe Element will be inserted here. -->
-            </div>
-
-            <!-- Used to display Element errors. -->
-            <div id="card-errors" role="alert"></div>
-        </div>
-
-        <button>Submit Payment</button>
-    </form>
-</div>
-</div>
-HTML;
-        return $html;
-    }
 
     public function profile() {
         $user = $this->getUser();
@@ -188,31 +75,5 @@ HTML;
     <p class="joined">$joined</p>
 </div>
 HTML;
-    }
-
-    public function saveCard() {
-        \Stripe\Stripe::setApiKey('sk_test_9I5cObC7c0PdbDiTFgVY9G4T00w7IIhLm1');
-
-        // Create a Customer:
-        $customer = \Stripe\Customer::create([
-            'source' => 'tok_mastercard',
-            'email' => 'paying.user@example.com',
-        ]);
-
-        // Charge the Customer instead of the card:
-        $charge = \Stripe\Charge::create([
-            'amount' => 1000,
-            'currency' => 'usd',
-            'customer' => $customer->id,
-        ]);
-
-        // YOUR CODE: Save the customer ID and other info in a database for later.
-
-        // When it's time to charge the customer again, retrieve the customer ID.
-        $charge = \Stripe\Charge::create([
-            'amount' => 1500, // $15.00 this time
-            'currency' => 'usd',
-            'customer' => $customer_id, // Previously stored, then retrieved
-        ]);
     }
 }

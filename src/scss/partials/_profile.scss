@@ -1,20 +1,18 @@
 div#profile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 37em;
 
   div.user-card,
   div.address-wrapper,
   div.paymentCard-wrapper,
-  div.add-address,
+  form#add-address,
   div.add-paymentCard {
     width: 33%;
     height: 100%;
     text-align: center;
   }
 
-  div.add-address,
   div.add-paymentCard {
     display: none;
     margin: 0 auto;

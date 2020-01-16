@@ -9,6 +9,7 @@ import { Product } from "./Product";
 import { Cart } from "./Cart";
 import { Profile } from "./Profile";
 import { Checkout } from "./Checkout";
+import { Register } from "./Register";
 
 $(document).ready(function () {
     new Login();
@@ -18,4 +19,5 @@ $(document).ready(function () {
     new Cart();
     new Profile();
     new Checkout();
+    new Register();
 });

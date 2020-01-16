@@ -67,14 +67,14 @@ SQL;
         return true;
     }
 
-    public function addUser($user) {
+    public function add($username, $email, $password) {
         $salt = $this->randomSalt();
-        $hash = $this->hashPassword($user["password"], $salt);
+        $hash = $this->hashPassword($password, $salt);
 
         $sql = "INSERT INTO ".$this->tableName." (username, password, salt, email, joined, role) VALUES (?, ?, ?, ?, ?, ?)";
         $pdo = $this->pdo();
         $statement = $pdo->prepare($sql);
-        if(!$statement->execute(array($user['username'], $hash, $salt, $user['email'], date("Y-m-d H:i:s"), "M"))) {
+        if(!$statement->execute(array($username, $hash, $salt, $email, date("Y-m-d H:i:s"), "M"))) {
             return null;
         }
     }

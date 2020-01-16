@@ -2,7 +2,6 @@ import $ from 'jquery';
 import {parse_json} from "./parse_json";
 
 export const Members = function() {
-
     $("div.user-card button.delete-user").click(function(event) {
         event.preventDefault();
 

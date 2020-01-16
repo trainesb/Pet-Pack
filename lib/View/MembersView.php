@@ -4,12 +4,7 @@
 namespace View;
 
 
-use API\UserTable;
-use Model\User;
-
 class MembersView extends View {
-
-    private $members = [];
 
     public function __construct($site, $user) {
         parent::__construct($site, $user);
@@ -19,44 +14,57 @@ class MembersView extends View {
             header("location: " . $this->getProtectRedirect());
             exit;
         }
-
-        $members = new UserTable($site);
-        $members = $members->getAll();
-        foreach ($members as $member) {
-            array_push($this->members, new User($member));
-        }
     }
 
-    public function members() {
-        $html = '<div class="members-wrapper">';
-        if(!empty($this->members)) {
-            foreach ($this->members as $member) {
-                $id = $member->getId();
-                $username = $member->getUsername();
-                $firstName = $member->getFirstName();
-                $lastName = $member->getLastName();
-                $email = $member->getEmail();
-                $phone = $member->getPhone();
-                $profileImg = $member->getProfileImg();
-                $role = $member->getRole();
-                $joined = date("Y-m-d", $member->getJoined());
+    public function customers() {
+        $dotenv = \Dotenv\Dotenv::create(__DIR__.'\..\..');
+        $dotenv->load();
 
-                $html .= <<<HTML
-<div id="$id" class="user-card">
-    <button id="$id" class="delete-user">X</button>
-    <h2 class="username">$username</h2>
-    <p class="profileImg"><img src="$profileImg" /></p>
-    <h3 class="name">$firstName $lastName</h3>
-    <p class="email">$email</p>
-    <p class="phone">$phone</p>
-    <p class="role">$role</p>
-    <p class="joined">$joined</p>
-</div>
-HTML;
-            }
+        $access_token = ($_ENV["USE_PROD"] == 'true')  ?  $_ENV["PROD_ACCESS_TOKEN"] : $_ENV["SANDBOX_ACCESS_TOKEN"];
+        $host_url = ($_ENV["USE_PROD"] == 'true')  ?  "https://connect.squareup.com" : "https://connect.squareupsandbox.com";
+        $api_config = new \SquareConnect\Configuration();
+        $api_config->setHost($host_url);
+        $api_config->setAccessToken($access_token);
+
+        $api_client = new \SquareConnect\ApiClient($api_config);
+        $customersApi = new \SquareConnect\Api\CustomersApi($api_client);
+
+        $customers = $customersApi->listCustomers();
+        $customers = $customers->getCustomers();
+
+        $html = '<div class="customer-cards">';
+        foreach ($customers as $customer) {
+            $html .= $this->customer($customer);
         }
         $html .= '</div>';
         return $html;
+    }
+
+    public function customer($customer) {
+        $id = $customer->getId();
+        $joined = $customer->getCreatedAt();
+        $cards = $customer->getCards();
+        $firstName = $customer->getGivenName();
+        $lastName = $customer->getFamilyName();
+        $username = $customer->getNickname();
+        $email = $customer->getEmailAddress();
+        $address = $customer->getAddress();
+        $phone = $customer->getPhoneNumber();
+        $birthday = $customer->getBirthday();
+
+        return <<<HTML
+<div id="$id" class="customer-card">
+    <p class="username">Username: $username</p>
+    <p class="first-name">First Name: $firstName</p>
+    <p class="last-name">Last Name: $lastName</p>
+    <p class="email">Email: $email</p>
+    <p class="address">Address: $address</p>
+    <p class="phone">Phone: $phone</p>
+    <p class="birthday">Birthday: $birthday</p>
+    <p class="cards">Cards: $cards</p>
+    <p class="joined">Joined $joined</p>
+</div>
+HTML;
     }
 
     public function present() {
@@ -64,7 +72,7 @@ HTML;
 
         echo '<div id="members">';
         echo $this->nav();
-        echo $this->members();
+        echo $this->customers();
         echo '</div>';
         echo $this->footer();
     }

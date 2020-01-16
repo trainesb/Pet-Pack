@@ -2,25 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/petpack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/petpack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Controller/CreateAddressController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Controller/CreateCustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/View/Form/CreateAddress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/View/Form/CreateCustomer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post/create-address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post/create-customer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/API/UserTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/API/UserTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/CheckoutView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/CheckoutView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/MembersView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/MembersView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/ProfileView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/RegisterView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/RegisterView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/site.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/site.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/members.php" beforeDir="false" afterPath="$PROJECT_DIR$/members.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Members.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Members.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_members.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_members.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +113,7 @@
       <workItem from="1578962015191" duration="49000" />
       <workItem from="1578963829229" duration="33293000" />
       <workItem from="1579001770556" duration="4543000" />
-      <workItem from="1579113632283" duration="4100000" />
+      <workItem from="1579113632283" duration="15814000" />
     </task>
     <servers />
   </component>
@@ -124,10 +129,10 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2246" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578731136046" />
-    <state x="1920" y="-44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578972625779">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579139322638">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="1920" y="-44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578972625779" />
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579139322638" />
     <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578969529376">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
@@ -148,14 +153,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2240" y="-149" key="FileChooserDialogImpl/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578982824130" />
-    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1578996993179">
+    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1579147715272">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578996993179" />
-    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579130517041">
+    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579147715272" />
+    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579147680032">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579130517041" />
+    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579147680032" />
     <state x="1963" y="203" key="SettingsEditor" timestamp="1578719378761">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>

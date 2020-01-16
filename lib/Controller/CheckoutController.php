@@ -28,7 +28,6 @@ class CheckoutController {
             return;
         }
 
-        var_dump($_POST);
         $nonce = $_POST['nonce'];
         if (is_null($nonce)) {
             echo "Invalid card data";

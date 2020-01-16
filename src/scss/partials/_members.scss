@@ -1,25 +1,10 @@
-div.members-wrapper {
-  text-align: center;
+div.customer-cards {
+  display: flex;
+  justify-content: center;
 
-  div.user-card {
-    position: relative;
-    display: inline-block;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  div.customer-card {
+    border: solid thin #000;
     text-align: center;
     margin: 1em;
-
-    button.delete-user {
-      position: absolute;
-      right: 0.5em;
-      top: 0.5em;
-      background-color: #fff;
-      border: none;
-    }
-
-    button.delete-user:hover,
-    button.delete-user:focus {
-      background-color: #000;
-      color: #fff;
-    }
   }
 }

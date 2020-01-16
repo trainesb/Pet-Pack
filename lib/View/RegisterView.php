@@ -12,10 +12,11 @@ class RegisterView extends View {
     }
 
     public function present() {
-        echo $this->head();
+        $registerForm = new Form\CreateCustomer();
 
         echo '<div id="register">';
         echo $this->nav();
+        echo $registerForm->present();
         echo '</div>';
         echo $this->footer();
     }
