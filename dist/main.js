@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot div.description-card,\n  div.product-wrapper div.product-foot div.shipping-card,\n  div.product-wrapper div.product-foot div.reviews-card {\n    width: 33%;\n    display: inline-block; }\n\ndiv.customer-cards {\n  display: flex;\n  justify-content: center; }\n  div.customer-cards div.customer-card {\n    border: solid thin #000;\n    text-align: center;\n    margin: 1em; }\n\ndiv#profile {\n  display: flex;\n  align-items: center;\n  height: 37em; }\n  div#profile div.user-card,\n  div#profile div.address-wrapper,\n  div#profile div.paymentCard-wrapper,\n  div#profile form#add-address,\n  div#profile div.add-paymentCard {\n    width: 33%;\n    height: 100%;\n    text-align: center; }\n  div#profile div.add-paymentCard {\n    display: none;\n    margin: 0 auto; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n", ""]);
+exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot div.description-card,\n  div.product-wrapper div.product-foot div.shipping-card,\n  div.product-wrapper div.product-foot div.reviews-card {\n    width: 33%;\n    display: inline-block; }\n\ndiv.customer-cards {\n  display: flex;\n  justify-content: center; }\n  div.customer-cards div.customer-card {\n    border: solid thin #000;\n    text-align: center;\n    margin: 1em; }\n\ndiv#profile {\n  display: flex;\n  justify-content: center; }\n  div#profile div.profile-card,\n  div#profile form#add-address {\n    border: solid thin #000;\n    text-align: center;\n    margin: 1em; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11251,6 +11251,43 @@ const Checkout = function() {
 
 /***/ }),
 
+/***/ "./src/js/CreateCatalogItem.js":
+/*!*************************************!*\
+  !*** ./src/js/CreateCatalogItem.js ***!
+  \*************************************/
+/*! exports provided: CreateCatalogItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreateCatalogItem", function() { return CreateCatalogItem; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const CreateCatalogItem = function() {
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("form#create-catalog-item").submit(function (event) {
+        event.preventDefault();
+
+        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+           url: "post/create-catalog-item.php",
+           data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
+           type: "POST",
+           success: function (data) {
+               console.log(JSON.stringify(data));
+           },
+           error: function (xhr, status, error) {
+               console.log(error);
+           }
+        });
+    });
+};
+
+/***/ }),
+
 /***/ "./src/js/Login.js":
 /*!*************************!*\
   !*** ./src/js/Login.js ***!
@@ -11520,6 +11557,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Profile */ "./src/js/Profile.js");
 /* harmony import */ var _Checkout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Checkout */ "./src/js/Checkout.js");
 /* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Register */ "./src/js/Register.js");
+/* harmony import */ var _CreateCatalogItem__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./CreateCatalogItem */ "./src/js/CreateCatalogItem.js");
+
 
 
 
@@ -11542,6 +11581,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Profile__WEBPACK_IMPORTED_MODULE_7__["Profile"]();
     new _Checkout__WEBPACK_IMPORTED_MODULE_8__["Checkout"]();
     new _Register__WEBPACK_IMPORTED_MODULE_9__["Register"]();
+    new _CreateCatalogItem__WEBPACK_IMPORTED_MODULE_10__["CreateCatalogItem"]();
 });
 
 /***/ }),

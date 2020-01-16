@@ -10,6 +10,7 @@ import { Cart } from "./Cart";
 import { Profile } from "./Profile";
 import { Checkout } from "./Checkout";
 import { Register } from "./Register";
+import { CreateCatalogItem } from "./CreateCatalogItem";
 
 $(document).ready(function () {
     new Login();
@@ -20,4 +21,5 @@ $(document).ready(function () {
     new Profile();
     new Checkout();
     new Register();
+    new CreateCatalogItem();
 });

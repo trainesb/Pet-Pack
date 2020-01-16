@@ -1,7 +1,7 @@
 <?php
 $open = true;  // Dont have to be signed in to access
 require 'lib/site.inc.php';
-$view = new View\MembersView($site, $user);
+$view = new View\MembersView($site, $user, $api_client);
 
 ?>
 

@@ -1,20 +1,11 @@
 div#profile {
   display: flex;
-  align-items: center;
-  height: 37em;
+  justify-content: center;
 
-  div.user-card,
-  div.address-wrapper,
-  div.paymentCard-wrapper,
-  form#add-address,
-  div.add-paymentCard {
-    width: 33%;
-    height: 100%;
+  div.profile-card,
+  form#add-address {
+    border: solid thin #000;
     text-align: center;
-  }
-
-  div.add-paymentCard {
-    display: none;
-    margin: 0 auto;
+    margin: 1em;
   }
 }

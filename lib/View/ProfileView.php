@@ -69,8 +69,9 @@ class ProfileView extends View {
         $birthday = $customer->getBirthday();
 
         return <<<HTML
-<div id="$id" class="customer-card">
+<div id="$id" class="profile-card">
     <p class="username">Username: $username</p>
+    <p class="customerID">CustomerId: $customerId</p>
     <p class="first-name">First Name: $firstName</p>
     <p class="last-name">Last Name: $lastName</p>
     <p class="email">Email: $email</p>

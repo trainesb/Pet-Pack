@@ -6,8 +6,8 @@ namespace View;
 
 class MembersView extends View {
 
-    public function __construct($site, $user) {
-        parent::__construct($site, $user);
+    public function __construct($site, $user, $api_client) {
+        parent::__construct($site, $user, $api_client);
         $this->setTitle("Members");
 
         if(!$this->protect($site, $user)) {

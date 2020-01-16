@@ -10,16 +10,7 @@ class CheckoutController {
 
     private $result;
 
-    public function __construct($site) {
-        $dotenv = \Dotenv\Dotenv::create(__DIR__.'\..\..');
-        $dotenv->load();
-
-        $access_token = ($_ENV["USE_PROD"] == 'true')  ?  $_ENV["PROD_ACCESS_TOKEN"] : $_ENV["SANDBOX_ACCESS_TOKEN"];
-        $host_url = ($_ENV["USE_PROD"] == 'true')  ?  "https://connect.squareup.com" : "https://connect.squareupsandbox.com";
-        $api_config = new \SquareConnect\Configuration();
-        $api_config->setHost($host_url);
-        $api_config->setAccessToken($access_token);
-        $api_client = new \SquareConnect\ApiClient($api_config);
+    public function __construct($site, $api_client, $user) {
 
         if ($_SERVER['REQUEST_METHOD'] != 'POST') {
             error_log("Received a non-POST request");
@@ -48,13 +39,9 @@ class CheckoutController {
 
         try {
             $this->result = $payments_api->createPayment($request_body);
+
         } catch (\SquareConnect\ApiException $e) {
             $this->result = json_encode(["ok" => false, "message" => $e]);
-            //echo "Caught exception!<br/>";
-            //print_r("<strong>Response body:</strong><br/>");
-            //echo "<pre>"; var_dump($e->getResponseBody()); echo "</pre>";
-            //echo "<br/><strong>Response headers:</strong><br/>";
-            //echo "<pre>"; var_dump($e->getResponseHeaders()); echo "</pre>";
         }
     }
 

@@ -4,6 +4,8 @@
 namespace View;
 
 
+use View\Form\CreateCatalogItem;
+
 class CreateProductView extends View {
 
     public function __construct($site, $user) {
@@ -21,9 +23,14 @@ class CreateProductView extends View {
 
         echo '<div id="createProduct">';
         echo $this->nav();
-        echo $this->productForm();
+        echo $this->createCatalogItem();
         echo '</div>';
         echo $this->footer();
+    }
+
+    public function createCatalogItem() {
+        $catalogItem = new CreateCatalogItem();
+        return $catalogItem->present();
     }
 
     public function productForm() {
