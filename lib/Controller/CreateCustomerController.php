@@ -13,13 +13,13 @@ class CreateCustomerController {
 
     public function __construct($site) {
         $this->site = $site;
-        $this->addCustomer($_POST['username'], $_POST['email'], $_POST['password']);
-        $this->squareCreateCustomer($_POST['username'], $_POST['email']);
+        $id = $this->squareCreateCustomer($_POST['username'], $_POST['email']);
+        $this->addCustomer($id, $_POST['username'], $_POST['email'], $_POST['password']);
     }
 
-    public function addCustomer($username, $email, $password) {
+    public function addCustomer($id, $username, $email, $password) {
         $users = new UserTable($this->site);
-        if($users->add($username, $email, $password)) {
+        if($users->addUser($id, $username, $email, $password)) {
             $this->result = json_encode(["ok" => true]);
             return;
         }
@@ -47,6 +47,8 @@ class CreateCustomerController {
         // Call CreateCustomer
         try {
             $result = $customersApi->createCustomer($customer);
+            return $result->getCustomer()->getId();
+
             //print_r($result);
         } catch (Exception $e) {
             echo 'Exception when calling CustomersApi->createCustomer: ', $e->getMessage(), PHP_EOL;

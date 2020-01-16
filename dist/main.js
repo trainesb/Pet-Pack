@@ -11478,19 +11478,16 @@ const Register = function() {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("form#create-customer").submit(function (event) {
         event.preventDefault();
 
-
-
         jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
             url: 'post/create-customer.php',
             type: 'POST',
             data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
             success: function (data) {
-                //console.log(JSON.stringify(data));
                 let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
-                if(json.ok) {
+                if (json.ok) {
                     window.location.assign('./');
                 } else {
-                    console.error(json.message);
+                    console.log(json.message);
                 }
             },
             error: function (xhr, status, error) {

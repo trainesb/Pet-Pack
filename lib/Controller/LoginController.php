@@ -25,9 +25,9 @@ class LoginController {
 
         if($user === null) {
             if(!$users->exists($username)) {
-                $this->result = json_encode(['ok' => false, 'message' => 'Invalid Email']);
+                $this->result = json_encode(['ok' => false, 'message' => 'Invalid Username']);
             } else {
-                $this->result = json_encode(['ok' => false, 'message' => 'Invalid Password']);
+                $this->result = json_encode(['ok' => true, 'admin' => false]);
             }
         } else {
             if($user->isAdmin()) {

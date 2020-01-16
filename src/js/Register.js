@@ -17,19 +17,16 @@ export const Register = function() {
     $("form#create-customer").submit(function (event) {
         event.preventDefault();
 
-
-
         $.ajax({
             url: 'post/create-customer.php',
             type: 'POST',
             data: $(this).serialize(),
             success: function (data) {
-                //console.log(JSON.stringify(data));
                 let json = parse_json(data);
-                if(json.ok) {
+                if (json.ok) {
                     window.location.assign('./');
                 } else {
-                    console.error(json.message);
+                    console.log(json.message);
                 }
             },
             error: function (xhr, status, error) {

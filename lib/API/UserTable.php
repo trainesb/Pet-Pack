@@ -14,8 +14,8 @@ class UserTable extends Table {
 
     public function login($username, $password) {
         $sql =<<<SQL
-SELECT * from $this->tableName
-where username=?
+SELECT * FROM $this->tableName
+WHERE username=?
 SQL;
 
         $pdo = $this->pdo();
@@ -27,11 +27,9 @@ SQL;
         }
 
         $row = $statement->fetch(\PDO::FETCH_ASSOC);
-
         // Get the encrypted password and salt from the record
         $hash = $row['password'];
         $salt = $row['salt'];
-
         // Ensure it is correct
         if($hash !== hash("sha256", $password . $salt)) {
             return null;
@@ -67,14 +65,13 @@ SQL;
         return true;
     }
 
-    public function add($username, $email, $password) {
+    public function addUser($id, $username, $email, $password) {
         $salt = $this->randomSalt();
         $hash = $this->hashPassword($password, $salt);
-
-        $sql = "INSERT INTO ".$this->tableName." (username, password, salt, email, joined, role) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO ".$this->tableName." (customerId, username, email, password, salt, role) VALUES (?, ?, ?, ?, ?, ?)";
         $pdo = $this->pdo();
         $statement = $pdo->prepare($sql);
-        if(!$statement->execute(array($username, $hash, $salt, $email, date("Y-m-d H:i:s"), "M"))) {
+        if(!$statement->execute(array($id, $username, $email, $hash, $salt, "M"))) {
             return null;
         }
     }
