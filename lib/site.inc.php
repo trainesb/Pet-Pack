@@ -22,6 +22,8 @@ if(empty($_SESSION["cart"])) {
     $_SESSION["cart"] = $cart;
 };
 
+
+
 if(!isset($open) || !$open) {
     // This is a page other than the login pages
     if (!isset($_SESSION[Model\User::SESSION_NAME])) {

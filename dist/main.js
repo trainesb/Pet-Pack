@@ -11152,6 +11152,105 @@ const Cart = function() {
 
 /***/ }),
 
+/***/ "./src/js/Checkout.js":
+/*!****************************!*\
+  !*** ./src/js/Checkout.js ***!
+  \****************************/
+/*! exports provided: Checkout */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Checkout", function() { return Checkout; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const Checkout = function() {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("body#checkout").ready(function(event) {
+        // Create and initialize a payment form object
+        const paymentForm = new SqPaymentForm({
+            // Initialize the payment form elements
+
+            applicationId: "sandbox-sq0idb-V-a9JFoWvj0VG6loYTGT-w",
+            inputClass: 'sq-input',
+            autoBuild: false,
+            // Customize the CSS for SqPaymentForm iframe elements
+            inputStyles: [{
+                fontSize: '16px',
+                lineHeight: '24px',
+                padding: '16px',
+                placeholderColor: '#a0a0a0',
+                backgroundColor: 'transparent',
+            }],
+            // Initialize the credit card placeholders
+            cardNumber: {
+                elementId: 'sq-card-number',
+                placeholder: 'Card Number'
+            },
+            cvv: {
+                elementId: 'sq-cvv',
+                placeholder: 'CVV'
+            },
+            expirationDate: {
+                elementId: 'sq-expiration-date',
+                placeholder: 'MM/YY'
+            },
+            postalCode: {
+                elementId: 'sq-postal-code',
+                placeholder: 'Postal'
+            },
+            // SqPaymentForm callback functions
+            callbacks: {
+                /*
+                * callback function: cardNonceResponseReceived
+                * Triggered when: SqPaymentForm completes a card nonce request
+                */
+                cardNonceResponseReceived: function (errors, nonce, cardData) {
+                    if (errors) {
+                        // Log errors from nonce generation to the browser developer console.
+                        console.error('Encountered errors:');
+                        errors.forEach(function (error) {
+                            console.error('  ' + error.message);
+                        });
+                        alert('Encountered errors, check browser developer console for more details');
+                        return;
+                    }
+                    alert(`The generated nonce is:\n${nonce}`);
+
+                    jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+                        url: 'post/checkout.php',
+                        data: {nonce: nonce},
+                        type: 'POST',
+                        success: function(data) {
+                            console.log(JSON.stringify(data));
+                            alert('Payment complete successfully!\nCheck browser developer console for more details');
+                        },
+                        error: function(xhr, status, error) {
+                            console.error(error);
+                            alert('Payment failed to complete!\nCheck browser developer console for more details');
+                        }
+                    });
+                }
+            }
+        });
+
+        paymentForm.build();
+
+        // onGetCardNonce is triggered when the "Pay $1.00" button is clicked
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()("#sq-creditcard").click(function(event) {
+            // Don't submit the form until SqPaymentForm returns with a nonce
+            event.preventDefault();
+            // Request a nonce from the SqPaymentForm object
+            paymentForm.requestCardNonce();
+        });
+    });
+};
+
+/***/ }),
+
 /***/ "./src/js/Login.js":
 /*!*************************!*\
   !*** ./src/js/Login.js ***!
@@ -11344,6 +11443,13 @@ const Profile = function() {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("form#add-payment").submit(function (event) {
         event.preventDefault();
 
+        let americanExpress = /^(?:3[47][0-9]{13})$/;
+        let visa = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+        let masterCard = /^(?:5[1-5][0-9]{14})$/;
+        let discoverCard = /^(?:6(?:011|5[0-9][0-9])[0-9]{12})$/;
+        let dinersClubCard = /^(?:3(?:0[0-5]|[68][0-9])[0-9]{11})$/;
+        let jcb = /^(?:(?:2131|1800|35\d{3})\d{11})$/;
+
         let userId = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('class');
         let alias = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input[name=alias]").text();
         let fullName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input[name=fullName]").text();
@@ -11451,6 +11557,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Product */ "./src/js/Product.js");
 /* harmony import */ var _Cart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Cart */ "./src/js/Cart.js");
 /* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Profile */ "./src/js/Profile.js");
+/* harmony import */ var _Checkout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Checkout */ "./src/js/Checkout.js");
+
 
 
 
@@ -11469,6 +11577,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Product__WEBPACK_IMPORTED_MODULE_5__["Product"]();
     new _Cart__WEBPACK_IMPORTED_MODULE_6__["Cart"]();
     new _Profile__WEBPACK_IMPORTED_MODULE_7__["Profile"]();
+    new _Checkout__WEBPACK_IMPORTED_MODULE_8__["Checkout"]();
 });
 
 /***/ }),

@@ -7,5 +7,9 @@
       "Model\\": "lib/Model",
       "View\\": "lib/View"
     }
+  },
+  "require": {
+    "square/connect": "^2.20191217",
+    "vlucas/phpdotenv": "^3.3"
   }
 }

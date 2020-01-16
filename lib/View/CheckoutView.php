@@ -5,15 +5,12 @@ namespace View;
 
 
 use API\AddressTable;
-use API\PaymentCardTable;
 use Model\Address;
-use Model\PaymentCard;
 
 class CheckoutView extends View {
 
     private $cart;
     private $address;
-    private $paymentCard;
 
     public function __construct($site, $user, &$session) {
         parent::__construct($site, $user);
@@ -31,20 +28,19 @@ class CheckoutView extends View {
         $id = $user->getId();
         $addresses = new AddressTable($site);
         $this->address = $addresses->getByUser($id)[0];
-
-        $cards = new PaymentCardTable($site);
-        $this->paymentCard = $cards->getByUser($id)[0];
     }
 
     public function present() {
         echo $this->head();
+        echo '<body>';
         $user = $this->getUser();
         echo '<div id="checkout" class="'.$user->getId().'">';
         echo $this->nav();
         echo '<button class="submit-checkout">Finish Checkout</button>';
         echo $this->address();
-        echo $this->paymentCard();
+        echo $this->payment();
         echo $this->product();
+        echo $this->total();
         echo '<button class="submit-checkout">Finish Checkout</button>';
         echo '</div>';
         echo $this->footer();
@@ -80,20 +76,16 @@ HTML;
 HTML;
     }
 
-    public function paymentCard() {
-        $paymentCard = new PaymentCard($this->paymentCard);
-        $id = $paymentCard->getId();
-        $alias = $paymentCard->getAlias();
-        $name = $paymentCard->getFullName();
+    public function payment() {
 
         return <<<HTML
-<div id="$id" class="payment">
-    <h2>Payment</h2>
-    <hr>
-    <p class="alias">$alias</p>
-    <p class="name">$name</p>
+<div id="form-container">
+    <div id="sq-card-number"></div>
+    <div class="third" id="sq-expiration-date"></div>
+    <div class="third" id="sq-cvv"></div>
+    <div class="third" id="sq-postal-code"></div>
+    <button id="sq-creditcard" class="button-credit-card">Pay $1.00</button>
 </div>
-<hr>
 HTML;
     }
 

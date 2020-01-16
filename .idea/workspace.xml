@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/API/OrderTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/Checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/petpack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/petpack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/CheckoutView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/CheckoutView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/ProfileView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/site.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/site.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +53,10 @@
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/square/connect" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WEOIv5cgfOw03pKxlgUmUNtJvq" />
@@ -59,7 +72,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../epetpack" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -93,7 +106,9 @@
       <workItem from="1578713364340" duration="8554000" />
       <workItem from="1578730631150" duration="4704000" />
       <workItem from="1578962015191" duration="49000" />
-      <workItem from="1578963829229" duration="31797000" />
+      <workItem from="1578963829229" duration="33293000" />
+      <workItem from="1579001770556" duration="4543000" />
+      <workItem from="1579113632283" duration="4100000" />
     </task>
     <servers />
   </component>
@@ -137,10 +152,10 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578996993179" />
-    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1578996892566">
+    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579130517041">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578996892566" />
+    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579130517041" />
     <state x="1963" y="203" key="SettingsEditor" timestamp="1578719378761">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
@@ -149,9 +164,9 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2116" y="30" key="run.anything.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578976458356" />
-    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup" timestamp="1578992224431">
+    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup" timestamp="1579013780350">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578992224431" />
+    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579013780350" />
   </component>
 </project>

@@ -5,7 +5,8 @@ $view = new View\CheckoutView($site, $user, $_SESSION);
 
 <!DOCTYPE html>
 <html lang="en">
+<?php echo $view->head(); ?>
+<body id="checkout">
 <?php echo $view->present(); ?>
-
 </body>
 </html>

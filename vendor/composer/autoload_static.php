@@ -6,10 +6,23 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitee8d971305be4afea586aab5e72d1262
 {
+    public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'V' => 
         array (
             'View\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'SquareConnect\\' => 14,
+        ),
+        'P' => 
+        array (
+            'PhpOption\\' => 10,
         ),
         'M' => 
         array (
@@ -18,6 +31,10 @@ class ComposerStaticInitee8d971305be4afea586aab5e72d1262
         'L' => 
         array (
             'Lib\\' => 4,
+        ),
+        'D' => 
+        array (
+            'Dotenv\\' => 7,
         ),
         'C' => 
         array (
@@ -34,6 +51,18 @@ class ComposerStaticInitee8d971305be4afea586aab5e72d1262
         array (
             0 => __DIR__ . '/../..' . '/lib/View',
         ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'SquareConnect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/square/connect/lib',
+        ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/lib/Model',
@@ -41,6 +70,10 @@ class ComposerStaticInitee8d971305be4afea586aab5e72d1262
         'Lib\\' => 
         array (
             0 => __DIR__ . '/../..' . '/lib',
+        ),
+        'Dotenv\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'Controller\\' => 
         array (

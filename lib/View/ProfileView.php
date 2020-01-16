@@ -146,31 +146,18 @@ HTML;
         }
         $html .= <<<HTML
 <div id="" class="add-paymentCard">
-    <form id="add-payment" class="$this->id">
-        <fieldset>
-            <legend>Add Payment</legend>
-            <p>
-                <label for="alias">Alias: </label>
-                <input type="text" name="alias" placeholder="Alias"/>
-            </p>
-            <p>
-                <label for="fullName">Full Name: </label>
-                <input type="text" name="fullName" placeholder="Full Name"/>
-            </p>
-            <p>
-                <label for="cardNumber">Card Number: </label>
-                <input type="number" name="cardNumber" value="0000 0000 0000 0000"/>
-            </p>
-            <p>
-                <label for="vcc">VCC: </label>
-                <input type="number" name="vcc" value="000"/>
-            </p>
-            <p>
-                <label for="zip">Zip: </label>
-                <input type="number" name="zip" value="00000"/>
-            </p>
-            <p><input type="submit" value="Add"/></p>
-        </fieldset>
+    <form method="post" id="payment-form">
+        <div class="form-row">
+            <label for="card-element">Credit or debit card</label>
+            <div id="card-element">
+            <!-- A Stripe Element will be inserted here. -->
+            </div>
+
+            <!-- Used to display Element errors. -->
+            <div id="card-errors" role="alert"></div>
+        </div>
+
+        <button>Submit Payment</button>
     </form>
 </div>
 </div>
@@ -201,5 +188,31 @@ HTML;
     <p class="joined">$joined</p>
 </div>
 HTML;
+    }
+
+    public function saveCard() {
+        \Stripe\Stripe::setApiKey('sk_test_9I5cObC7c0PdbDiTFgVY9G4T00w7IIhLm1');
+
+        // Create a Customer:
+        $customer = \Stripe\Customer::create([
+            'source' => 'tok_mastercard',
+            'email' => 'paying.user@example.com',
+        ]);
+
+        // Charge the Customer instead of the card:
+        $charge = \Stripe\Charge::create([
+            'amount' => 1000,
+            'currency' => 'usd',
+            'customer' => $customer->id,
+        ]);
+
+        // YOUR CODE: Save the customer ID and other info in a database for later.
+
+        // When it's time to charge the customer again, retrieve the customer ID.
+        $charge = \Stripe\Charge::create([
+            'amount' => 1500, // $15.00 this time
+            'currency' => 'usd',
+            'customer' => $customer_id, // Previously stored, then retrieved
+        ]);
     }
 }
