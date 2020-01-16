@@ -40,8 +40,8 @@ class CreateCustomerController {
         $api_config = new \SquareConnect\Configuration();
         $api_config->setHost($host_url);
         $api_config->setAccessToken($access_token);
-
         $api_client = new \SquareConnect\ApiClient($api_config);
+
         $customersApi = new \SquareConnect\Api\CustomersApi($api_client);
 
         // Call CreateCustomer

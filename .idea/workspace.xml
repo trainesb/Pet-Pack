@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/UserTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/API/UserTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Controller/CreateCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/CreateCustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/MembersView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/MembersView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/ProfileView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/site.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/site.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <workItem from="1578962015191" duration="49000" />
       <workItem from="1578963829229" duration="33293000" />
       <workItem from="1579001770556" duration="4543000" />
-      <workItem from="1579113632283" duration="20121000" />
+      <workItem from="1579113632283" duration="21815000" />
     </task>
     <servers />
   </component>

@@ -17,16 +17,7 @@ class MembersView extends View {
     }
 
     public function customers() {
-        $dotenv = \Dotenv\Dotenv::create(__DIR__.'\..\..');
-        $dotenv->load();
-
-        $access_token = ($_ENV["USE_PROD"] == 'true')  ?  $_ENV["PROD_ACCESS_TOKEN"] : $_ENV["SANDBOX_ACCESS_TOKEN"];
-        $host_url = ($_ENV["USE_PROD"] == 'true')  ?  "https://connect.squareup.com" : "https://connect.squareupsandbox.com";
-        $api_config = new \SquareConnect\Configuration();
-        $api_config->setHost($host_url);
-        $api_config->setAccessToken($access_token);
-
-        $api_client = new \SquareConnect\ApiClient($api_config);
+        $api_client = $this->getApiClient();
         $customersApi = new \SquareConnect\Api\CustomersApi($api_client);
 
         $customers = $customersApi->listCustomers();

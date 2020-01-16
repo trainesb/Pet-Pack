@@ -11,12 +11,14 @@ class View {
     private $user;
     private $site;
     private $title;
+    private $api_client;
     private $links = [];
     private $protectRedirect = null;
 
-    public function __construct(Site $site, User $user = null) {
+    public function __construct(Site $site, User $user = null, $api_client = null) {
         $this->site = $site;
         $this->user = $user;
+        $this->api_client = $api_client;
 
         if($user) {
             if($user->isAdmin()) {
@@ -92,6 +94,8 @@ HTML;
     public function getProtectRedirect() {
         return $this->protectRedirect;
     }
+
+    public function getApiClient() { return $this->api_client; }
 
     public function footer() {
         return '<footer><p>Copyright © '.date('Y').' Pet Pack, LLC. All Rights Reserved.</p></footer>';

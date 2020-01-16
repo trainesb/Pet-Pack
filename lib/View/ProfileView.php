@@ -16,8 +16,8 @@ class ProfileView extends View {
     private $id;
     private $paymentCards;
 
-    public function __construct($site, $user) {
-        parent::__construct($site, $user);
+    public function __construct($site, $user, $api_client) {
+        parent::__construct($site, $user, $api_client);
         $this->setTitle("Profile");
 
         if(!$user->isMember()) {
@@ -50,29 +50,35 @@ class ProfileView extends View {
         return $createAddress->present();
     }
 
-
-
     public function profile() {
         $user = $this->getUser();
-        $id = $this->id;
-        $username = $user->getUsername();
-        $firstName = $user->getFirstName();
-        $lastName = $user->getLastName();
-        $email = $user->getEmail();
-        $phone = $user->getPhone();
-        $profileImg = $user->getProfileImg();
-        $role = $user->getRole();
-        $joined = date("Y-m-d", $user->getJoined());
+        $customerId = $user->getCustomerId();
+
+        $api_client = $this->getApiClient();
+        $customersApi = new \SquareConnect\Api\CustomersApi($api_client);
+        $customer = $customersApi->retrieveCustomer($customerId)->getCustomer();
+        $id = $customer->getId();
+        $joined = $customer->getCreatedAt();
+        $cards = $customer->getCards();
+        $firstName = $customer->getGivenName();
+        $lastName = $customer->getFamilyName();
+        $username = $customer->getNickname();
+        $email = $customer->getEmailAddress();
+        $address = $customer->getAddress();
+        $phone = $customer->getPhoneNumber();
+        $birthday = $customer->getBirthday();
 
         return <<<HTML
-<div id="$id" class="user-card">
-    <h2 class="username">$username</h2>
-    <p class="profileImg"><img src="$profileImg" /></p>
-    <h3 class="name">$firstName $lastName</h3>
-    <p class="email">$email</p>
-    <p class="phone">$phone</p>
-    <p class="role">$role</p>
-    <p class="joined">$joined</p>
+<div id="$id" class="customer-card">
+    <p class="username">Username: $username</p>
+    <p class="first-name">First Name: $firstName</p>
+    <p class="last-name">Last Name: $lastName</p>
+    <p class="email">Email: $email</p>
+    <p class="address">Address: $address</p>
+    <p class="phone">Phone: $phone</p>
+    <p class="birthday">Birthday: $birthday</p>
+    <p class="cards">Cards: $cards</p>
+    <p class="joined">Joined $joined</p>
 </div>
 HTML;
     }

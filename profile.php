@@ -1,6 +1,6 @@
 <?php
 require 'lib/site.inc.php';
-$view = new View\ProfileView($site, $user);
+$view = new View\ProfileView($site, $user, $api_client);
 ?>
 
 <!DOCTYPE html>
