@@ -24,9 +24,12 @@ class EditProduct extends View {
     }
 
     public function present() {
+        echo "<div class='adminNav'>";
         echo $this->adminNav();
-        echo $this->tabs();
+        echo "</div>";
 
+        echo "<div class='edit-product-wrapper'>";
+        echo $this->tabs();
         echo $this->object();
         echo $this->itemData();
         echo $this->imageData();
@@ -34,7 +37,7 @@ class EditProduct extends View {
         echo $this->discountData();
         echo $this->itemOptionData();
         echo $this->itemOptionValue();
-
+        echo "</div>";
     }
 
 
