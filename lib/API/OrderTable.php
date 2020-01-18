@@ -7,22 +7,23 @@ namespace API;
 class OrderTable extends Table {
 
     public function __construct($site) {
-        parent::__construct($site, "order");
+        parent::__construct($site, "payment");
     }
 
     public function addOrder($userId, $paymentId) {
-        print_r($userId);
-        print_r($paymentId);
+        var_dump($userId);
+        var_dump($paymentId);
         $sql = <<<SQL
 INSERT INTO $this->tableName (userId, paymentId) VALUES (?, ?)
 SQL;
         $pdo = $this->pdo();
         $statement = $pdo->prepare($sql);
-        $ex = $statement->execute(array($userId, $paymentId));
-        print_r($ex);
+        $ex = $statement->execute(array((int)$userId, $paymentId));
+        var_dump($ex);
         if($ex) {
-            return null;
+            return false;
         }
+        return true;
     }
 
 }
