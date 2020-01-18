@@ -9,5 +9,13 @@ div.products-wrapper {
     h1.name a {
       text-decoration: none;
     }
+
+    p.productImg {
+      overflow: hidden;
+
+      img {
+        transform: rotate(90deg);
+      }
+    }
   }
 }

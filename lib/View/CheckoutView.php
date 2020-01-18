@@ -25,18 +25,16 @@ class CheckoutView extends View {
     }
 
     public function present() {
-        echo $this->head();
-        echo '<body>';
         $user = $this->getUser();
-        echo '<div id="checkout" class="'.$user->getId().'">';
         echo $this->nav();
+        echo '<div id="checkout" class="'.$user->getId().'">';
         echo $this->address();
         echo $this->payment();
         echo $this->product();
         echo $this->total();
         echo '<button id="sq-creditcard" class="button-credit-card">Pay</button>';
         echo '</div>';
-        echo $this->footer();
+        echo '</div>';
     }
 
     public function total() {

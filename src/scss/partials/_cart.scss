@@ -1,4 +1,12 @@
 div#cart {
+  div.cart-wrapper {
+    text-align: center;
+
+    div.costs {
+        display: inline-block;
+      }
+  }
+
   ul.cart li.cart-item p {
     display: inline-block;
     width: 24%;

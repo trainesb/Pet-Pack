@@ -33,7 +33,6 @@ class CartView extends View {
         $html = <<<HTML
 <div class="cart-wrapper">
     <h1>Cart</h1>
-    <button class="check-out">Check Out</button>
     <hr>
     <div class="cart-items">
         <ul class="cart">

@@ -1,0 +1,31 @@
+body#checkout {
+  text-align: center;
+
+  div#checkout {
+    margin: 0.5em;
+
+    div#form-container {
+      display: inline-block;
+      width: 12em;
+    }
+
+    div.product-info {
+
+      div.product {
+        p.productImg {
+          width: 20em;
+          overflow: hidden;
+          display: inline-block;
+
+          img {
+            transform: rotate(90deg);
+          }
+        }
+
+        p.qty {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

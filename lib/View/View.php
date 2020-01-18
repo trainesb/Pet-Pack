@@ -94,6 +94,7 @@ HTML;
 <meta charset="utf-8">
 <title>$this->title</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/jpg" href="dist/img/Tab_Icon.jpg" />
 <script src="dist/main.js"></script>
 <script type="text/javascript" src="https://js.squareupsandbox.com/v2/paymentform"></script>
 HTML;

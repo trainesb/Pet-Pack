@@ -8,5 +8,7 @@ $view = new View\CheckoutView($site, $user, $_SESSION);
 <?php echo $view->head(); ?>
 <body id="checkout">
 <?php echo $view->present(); ?>
+
+<?php echo $view->footer(); ?>
 </body>
 </html>

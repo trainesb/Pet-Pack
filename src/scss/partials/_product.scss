@@ -16,23 +16,45 @@ div.product-wrapper {
       display: inline-block;
     }
 
+    div.left {
+      p.productImg {
+        overflow: hidden;
+
+        img {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
     div.right {
       position: absolute;
       text-align: center;
       top: 50%;
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
+
+      h1.name {
+        margin-bottom: 0;
+        display: inline-block;
+      }
+
+      p.sku {
+        margin: 0;
+        font-size: 0.7em;
+        display: inline-block;
+      }
+
+      form#product-order input#qty {
+        width: 2em;
+      }
     }
   }
 
   div.product-foot {
     text-align: center;
 
-    div.description-card,
-    div.shipping-card,
-    div.reviews-card {
-      width: 33%;
-      display: inline-block;
+    p.description {
+      font-size: 1.5em;
     }
   }
 }
