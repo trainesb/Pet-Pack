@@ -31,6 +31,14 @@ module.exports = {
                     'resolve-url-loader',
                     'sass-loader?sourceMap'
                 ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
             }
         ]
     }

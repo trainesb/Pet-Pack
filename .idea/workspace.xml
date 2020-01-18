@@ -3,35 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/CreateAddressController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/CreateCatalogItemController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/CreateCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/DeleteProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/DeleteUserController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/AdminView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/CreateProductView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/Form/CreateAddress.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/Form/CreateCard.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/Form/CreateCatalogItem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/MembersView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProductsView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/create-address.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/create-catalog-item.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/create-customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/delete-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/delete-user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/AdminNav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/CreateCatalogItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Members.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/User.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_admin.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_members.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/HomeView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/HomeView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../resume" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/img" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -121,7 +101,7 @@
       <workItem from="1579001770556" duration="4543000" />
       <workItem from="1579113632283" duration="35921000" />
       <workItem from="1579284238588" duration="1817000" />
-      <workItem from="1579307916469" duration="6722000" />
+      <workItem from="1579307916469" duration="9940000" />
     </task>
     <servers />
   </component>

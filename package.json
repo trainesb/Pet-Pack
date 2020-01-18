@@ -16,6 +16,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
     "popper.js": "^1.16.0",

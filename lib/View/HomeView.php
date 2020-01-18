@@ -64,18 +64,14 @@ HTML;
         if(!empty($this->products)) {
             foreach ($this->products as $product) {
                 $id = $product->getId();
-                $sku = $product->getSku();
                 $name = $product->getName();
                 $productImg = $product->getProductImg();
-                $shortDescription = $product->getShortDescription();
                 $regularPrice = $product->getRegularPrice();
 
                 $html .= <<<HTML
 <div id="$id" class="product-card">
-    <p class="sku">SKU: $sku</p>
     <h1 class="name"><a href="./product.php?name=$name&id=$id">$name</a></h1>
     <p class="productImg"><img src="$productImg" /></p>
-    <p class="shortDescription">$shortDescription</p>
     <p class="regularPrice">$$regularPrice</p>
 </div>
 HTML;

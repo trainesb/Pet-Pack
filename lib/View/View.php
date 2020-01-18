@@ -38,18 +38,6 @@ class View {
 
     public function getUser() { return $this->user; }
 
-    public function adminNav() {
-        return <<< HTML
-<nav class="adminNav">
-    <ul class="admin-links">
-        <li><a href="./members.php">Members</a></li>
-        <li><a href="./products.php">Products</a></li>
-        <li><a href="./create-product.php">Add A Product</a></li>
-    </ul>
-</nav>
-HTML;
-    }
-
     public function setTitle($title) {
         $this->title = $title;
     }
@@ -69,7 +57,7 @@ HTML;
         $html = <<<HTML
 <nav class="topNav">
     <ul class="left">
-        <li><a href="./">Pet Pack</a></li>
+        <li class="logo"><a href="./"><img src="dist/img/Logo.png"></a></li>
     </ul>
     <ul class="right">
 HTML;
