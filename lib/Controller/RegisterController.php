@@ -19,7 +19,7 @@ class RegisterController {
 
     public function addCustomer($id, $username, $email, $password) {
         $users = new UserTable($this->site);
-        if($users->addUser($id, $username, $email, $password)) {
+        if($users->addUser($id, $username, $email, $password) != null) {
             $this->result = json_encode(["ok" => true]);
             return;
         }

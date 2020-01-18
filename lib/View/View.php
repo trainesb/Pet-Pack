@@ -27,6 +27,7 @@ class View {
             $this->addLink("./product.php?name=Cat Pack&id=19", "Pre-Order");
             $this->addLink("./contact-us.php", "Contact Us");
             $this->addLink("./orders.php", "Orders");
+            $this->addLink("./profile.php", "Profile");
             $this->addLink("./cart.php", "Cart");
             $this->addLink("post/logout.php", "Log Out");
         } else {
