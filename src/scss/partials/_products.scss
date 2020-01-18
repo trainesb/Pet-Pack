@@ -1,0 +1,12 @@
+div#products {
+  div.products-wrapper {
+    text-align: center;
+
+    div.product {
+      display: inline-block;
+      border: solid thin #000;
+      margin: 1em;
+      width: 15em;
+    }
+  }
+}

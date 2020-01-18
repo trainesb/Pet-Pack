@@ -12,12 +12,7 @@ class ContactUsView extends View {
     }
 
     public function present() {
-
-        echo '<div id="contact-us">';
-        echo $this->nav();
         echo $this->contactForm();
-        echo '</div>';
-        echo $this->footer();
     }
 
     public function contactForm() {

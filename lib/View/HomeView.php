@@ -82,14 +82,6 @@ HTML;
     }
 
     public function present() {
-        echo $this->head();
-
-        echo '<div id="home">';
-        echo $this->nav();
         echo $this->products();
-        //echo $this->catalog();
-        echo '</div>';
-
-        echo $this->footer();
     }
 }

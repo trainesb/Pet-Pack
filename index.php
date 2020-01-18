@@ -9,7 +9,10 @@ $view = new View\HomeView($site, $user, $api_client);
 <?php echo $view->head(); ?>
 
 <body>
-<?php echo $view->present(); ?>
-
+<?php echo $view->nav(); ?>
+    <div id="home">
+        <?php echo $view->present(); ?>
+    </div>
+<?php echo $view->footer(); ?>
 </body>
 </html>

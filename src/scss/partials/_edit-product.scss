@@ -1,0 +1,43 @@
+div#edit-product {
+  div.tabs {
+    ul {
+      display: table-row;
+      height: 2em;
+
+      li {
+        height: 100%;
+        display: table-cell;
+        padding: 0.5em;
+        list-style-type: none;
+        vertical-align: middle;
+
+        a {
+          color: #000;
+          display: table-cell;
+          text-decoration: none;
+          vertical-align: middle;
+          height: 100%;
+        }
+      }
+
+      li.active {
+        background-color: #888888;
+
+        a {
+          text-decoration: underline;
+          color: #fff;
+        }
+      }
+    }
+
+    ul li:hover,
+    ul li:focus {
+      background-color: #888888;
+
+      a {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+  }
+}

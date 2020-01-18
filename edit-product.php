@@ -1,17 +1,16 @@
 <?php
-$open = true;
 require 'lib/site.inc.php';
-$view = new View\ProductView($site, $user);
+$view = new View\EditProduct($site, $user, $api_client);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <?php echo $view->head(); ?>
 <body>
-<?php echo $view->nav(); ?>
-    <div id="product">
+    <?php echo $view->nav() ?>
+    <div id="edit-product">
         <?php echo $view->present(); ?>
     </div>
-<?php echo $view->footer(); ?>
+    <?php echo $view->footer() ?>
 </body>
 </html>

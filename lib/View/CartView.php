@@ -16,8 +16,6 @@ class CartView extends View {
     }
 
     public function present() {
-        echo $this->head();
-
         echo '<div id="cart">';
         echo $this->nav();
         echo $this->cart();

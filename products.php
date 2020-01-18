@@ -1,7 +1,6 @@
 <?php
-$open = true;
 require 'lib/site.inc.php';
-$view = new View\ProductView($site, $user);
+$view = new View\Products($site, $user, $api_client);
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +8,7 @@ $view = new View\ProductView($site, $user);
 <?php echo $view->head(); ?>
 <body>
 <?php echo $view->nav(); ?>
-    <div id="product">
+    <div id="products">
         <?php echo $view->present(); ?>
     </div>
 <?php echo $view->footer(); ?>

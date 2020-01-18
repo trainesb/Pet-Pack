@@ -72,10 +72,6 @@ HTML;
     }
 
     public function present() {
-        echo '<div id="product">';
-        echo $this->nav();
         echo $this->product();
-        echo '</div>';
-        echo $this->footer();
     }
 }

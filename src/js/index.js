@@ -7,6 +7,8 @@ import { Product } from "./Product";
 import { Cart } from "./Cart";
 import { Checkout } from "./Checkout";
 import { Register } from "./Register";
+import { AddProduct } from "./AddProduct";
+import { EditProduct } from "./EditProduct";
 
 $(document).ready(function () {
     new Login();
@@ -14,4 +16,6 @@ $(document).ready(function () {
     new Cart();
     new Checkout();
     new Register();
+    new AddProduct();
+    new EditProduct();
 });
