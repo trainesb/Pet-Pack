@@ -18,7 +18,7 @@ export const Register = function() {
         event.preventDefault();
 
         $.ajax({
-            url: 'post/create-customer.php',
+            url: 'post/register.php',
             type: 'POST',
             data: $(this).serialize(),
             success: function (data) {

@@ -2,10 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/View/OrdersView.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orders.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/CreateAddressController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/CreateCatalogItemController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/CreateCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/DeleteProductController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/DeleteUserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/AdminView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/CreateProductView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Form/CreateAddress.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Form/CreateCard.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Form/CreateCatalogItem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/MembersView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/ProductsView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/create-address.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/create-catalog-item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/create-customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/delete-product.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/delete-user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/AdminNav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/CreateCatalogItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Members.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_admin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_members.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +121,7 @@
       <workItem from="1579001770556" duration="4543000" />
       <workItem from="1579113632283" duration="35921000" />
       <workItem from="1579284238588" duration="1817000" />
-      <workItem from="1579307916469" duration="6311000" />
+      <workItem from="1579307916469" duration="6722000" />
     </task>
     <servers />
   </component>
@@ -111,14 +137,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2246" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578731136046" />
-    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579139322638">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579314697920">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579139322638" />
-    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578969529376">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579314697920" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579314858827">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578969529376" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579314858827" />
     <state x="2192" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578734494365">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>

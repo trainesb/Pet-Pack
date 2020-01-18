@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot div.description-card,\n  div.product-wrapper div.product-foot div.shipping-card,\n  div.product-wrapper div.product-foot div.reviews-card {\n    width: 33%;\n    display: inline-block; }\n\ndiv.customer-cards {\n  display: flex;\n  justify-content: center; }\n  div.customer-cards div.customer-card {\n    border: solid thin #000;\n    text-align: center;\n    margin: 1em; }\n\ndiv#profile {\n  display: flex;\n  justify-content: center; }\n  div#profile div.profile-card,\n  div#profile form#add-address {\n    border: solid thin #000;\n    text-align: center;\n    margin: 1em; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n", ""]);
+exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot div.description-card,\n  div.product-wrapper div.product-foot div.shipping-card,\n  div.product-wrapper div.product-foot div.reviews-card {\n    width: 33%;\n    display: inline-block; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11068,33 +11068,6 @@ module.exports = function (moduleId, list, options) {
 
 /***/ }),
 
-/***/ "./src/js/AdminNav.js":
-/*!****************************!*\
-  !*** ./src/js/AdminNav.js ***!
-  \****************************/
-/*! exports provided: AdminNav */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminNav", function() { return AdminNav; });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-
-const AdminNav = function() {
-
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav.topNav ul li a.admin-link").hover(function () {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav.adminNav").css("display", "block");
-    });
-
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav.adminNav").mouseleave(function() {
-        jquery__WEBPACK_IMPORTED_MODULE_0___default()("nav.adminNav").css("display", "none");
-    });
-};
-
-/***/ }),
-
 /***/ "./src/js/Cart.js":
 /*!************************!*\
   !*** ./src/js/Cart.js ***!
@@ -11270,43 +11243,6 @@ const Checkout = function() {
 
 /***/ }),
 
-/***/ "./src/js/CreateCatalogItem.js":
-/*!*************************************!*\
-  !*** ./src/js/CreateCatalogItem.js ***!
-  \*************************************/
-/*! exports provided: CreateCatalogItem */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CreateCatalogItem", function() { return CreateCatalogItem; });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
-
-
-
-const CreateCatalogItem = function() {
-
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("form#create-catalog-item").submit(function (event) {
-        event.preventDefault();
-
-        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
-           url: "post/create-catalog-item.php",
-           data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
-           type: "POST",
-           success: function (data) {
-               console.log(JSON.stringify(data));
-           },
-           error: function (xhr, status, error) {
-               console.log(error);
-           }
-        });
-    });
-};
-
-/***/ }),
-
 /***/ "./src/js/Login.js":
 /*!*************************!*\
   !*** ./src/js/Login.js ***!
@@ -11344,50 +11280,6 @@ const Login = function() {
                 alert("Error: " + error);
             }
         });
-    });
-};
-
-/***/ }),
-
-/***/ "./src/js/Members.js":
-/*!***************************!*\
-  !*** ./src/js/Members.js ***!
-  \***************************/
-/*! exports provided: Members */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Members", function() { return Members; });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
-
-
-
-const Members = function() {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.user-card button.delete-user").click(function(event) {
-        event.preventDefault();
-
-        let username = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).next().text();
-        if(confirm("Delete User: " + username)) {
-            jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
-                url: "post/delete-user.php",
-                data: {id: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr("id")},
-                type: "POST",
-                success: function(data) {
-                    let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
-                    if(json.ok) {
-                        window.location.reload();
-                    } else {
-                        alert(json.message);
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.log("Error: " + error);
-                }
-            });
-        }
     });
 };
 
@@ -11465,43 +11357,6 @@ const Product = function() {
 
 /***/ }),
 
-/***/ "./src/js/Profile.js":
-/*!***************************!*\
-  !*** ./src/js/Profile.js ***!
-  \***************************/
-/*! exports provided: Profile */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Profile", function() { return Profile; });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
-
-
-
-const Profile = function() {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()("form#create-address").submit(function (event) {
-        event.preventDefault();
-
-        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
-            url: 'post/create-address.php',
-            type: 'POST',
-            data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
-            success: function (data) {
-                data = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
-                console.log(data);
-            },
-            error: function (xhr, status, error) {
-                console.error(error);
-            }
-        });
-    });
-};
-
-/***/ }),
-
 /***/ "./src/js/Register.js":
 /*!****************************!*\
   !*** ./src/js/Register.js ***!
@@ -11535,7 +11390,7 @@ const Register = function() {
         event.preventDefault();
 
         jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
-            url: 'post/create-customer.php',
+            url: 'post/register.php',
             type: 'POST',
             data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
             success: function (data) {
@@ -11569,18 +11424,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_Style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/Style.scss */ "./src/scss/Style.scss");
 /* harmony import */ var _scss_Style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_Style_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login */ "./src/js/Login.js");
-/* harmony import */ var _AdminNav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AdminNav */ "./src/js/AdminNav.js");
-/* harmony import */ var _Members__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Members */ "./src/js/Members.js");
-/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Product */ "./src/js/Product.js");
-/* harmony import */ var _Cart__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Cart */ "./src/js/Cart.js");
-/* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Profile */ "./src/js/Profile.js");
-/* harmony import */ var _Checkout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Checkout */ "./src/js/Checkout.js");
-/* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Register */ "./src/js/Register.js");
-/* harmony import */ var _CreateCatalogItem__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./CreateCatalogItem */ "./src/js/CreateCatalogItem.js");
-
-
-
-
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Product */ "./src/js/Product.js");
+/* harmony import */ var _Cart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Cart */ "./src/js/Cart.js");
+/* harmony import */ var _Checkout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Checkout */ "./src/js/Checkout.js");
+/* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Register */ "./src/js/Register.js");
 
 
 
@@ -11593,14 +11440,10 @@ __webpack_require__.r(__webpack_exports__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Login__WEBPACK_IMPORTED_MODULE_2__["Login"]();
-    new _AdminNav__WEBPACK_IMPORTED_MODULE_3__["AdminNav"]();
-    new _Members__WEBPACK_IMPORTED_MODULE_4__["Members"]();
-    new _Product__WEBPACK_IMPORTED_MODULE_5__["Product"]();
-    new _Cart__WEBPACK_IMPORTED_MODULE_6__["Cart"]();
-    new _Profile__WEBPACK_IMPORTED_MODULE_7__["Profile"]();
-    new _Checkout__WEBPACK_IMPORTED_MODULE_8__["Checkout"]();
-    new _Register__WEBPACK_IMPORTED_MODULE_9__["Register"]();
-    new _CreateCatalogItem__WEBPACK_IMPORTED_MODULE_10__["CreateCatalogItem"]();
+    new _Product__WEBPACK_IMPORTED_MODULE_3__["Product"]();
+    new _Cart__WEBPACK_IMPORTED_MODULE_4__["Cart"]();
+    new _Checkout__WEBPACK_IMPORTED_MODULE_5__["Checkout"]();
+    new _Register__WEBPACK_IMPORTED_MODULE_6__["Register"]();
 });
 
 /***/ }),

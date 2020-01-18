@@ -6,7 +6,7 @@ namespace Controller;
 
 use API\UserTable;
 
-class CreateCustomerController {
+class RegisterController {
 
     private $result;
     private $site;
