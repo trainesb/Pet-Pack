@@ -1,0 +1,28 @@
+div#profile {
+  display: flex;
+  justify-content: center;
+
+  div.customer,
+  div.address-wrapper {
+    border: solid thin #000;
+    width: 20em;
+    margin: 1em;
+    position: relative;
+
+    h2,
+    p {
+      margin: 0.5em;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    p.edit-profile,
+    p.edit-address {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

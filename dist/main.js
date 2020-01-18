@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n    nav.topNav ul li.logo {\n      width: 5em; }\n      nav.topNav ul li.logo a {\n        padding: 0; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 100%;\n    display: table-row; }\n    nav.topNav ul.right li {\n      display: table-cell;\n      height: 4em;\n      margin: 0.5em;\n      list-style-type: none;\n      vertical-align: middle; }\n      nav.topNav ul.right li a {\n        display: table-cell;\n        vertical-align: middle;\n        height: 3em; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 25em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n  div.products-wrapper div.product-card h1.name a {\n    text-decoration: none; }\n  div.products-wrapper div.product-card p.productImg {\n    overflow: hidden; }\n    div.products-wrapper div.product-card p.productImg img {\n      transform: rotate(90deg); }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.left p.productImg {\n    overflow: hidden; }\n    div.product-wrapper div.product-info div.left p.productImg img {\n      transform: rotate(90deg); }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n    div.product-wrapper div.product-info div.right h1.name {\n      margin-bottom: 0;\n      display: inline-block; }\n    div.product-wrapper div.product-info div.right p.sku {\n      margin: 0;\n      font-size: 0.7em;\n      display: inline-block; }\n    div.product-wrapper div.product-info div.right form#product-order input#qty {\n      width: 2em; }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot p.description {\n    font-size: 1.5em; }\n\ndiv#edit-product {\n  position: relative; }\n  div#edit-product div.adminNav {\n    display: inline-block;\n    width: 10em; }\n    div#edit-product div.adminNav nav#adminNav {\n      position: absolute;\n      top: 0; }\n      div#edit-product div.adminNav nav#adminNav ul {\n        padding-left: 0.5em; }\n        div#edit-product div.adminNav nav#adminNav ul li {\n          list-style-type: none;\n          padding: 0.5em; }\n          div#edit-product div.adminNav nav#adminNav ul li a {\n            color: #000;\n            text-decoration: none; }\n        div#edit-product div.adminNav nav#adminNav ul li:hover,\n        div#edit-product div.adminNav nav#adminNav ul li:focus {\n          background-color: #888888; }\n          div#edit-product div.adminNav nav#adminNav ul li:hover a,\n          div#edit-product div.adminNav nav#adminNav ul li:focus a {\n            text-decoration: underline;\n            color: #fff; }\n  div#edit-product div.edit-product-wrapper {\n    display: inline-block;\n    margin: 0.5em; }\n    div#edit-product div.edit-product-wrapper div.tabs ul {\n      display: table-row;\n      height: 2em; }\n      div#edit-product div.edit-product-wrapper div.tabs ul li {\n        height: 100%;\n        display: table-cell;\n        padding: 0.5em;\n        list-style-type: none;\n        vertical-align: middle; }\n        div#edit-product div.edit-product-wrapper div.tabs ul li a {\n          color: #000;\n          display: table-cell;\n          text-decoration: none;\n          vertical-align: middle;\n          height: 100%; }\n      div#edit-product div.edit-product-wrapper div.tabs ul li.active {\n        background-color: #888888; }\n        div#edit-product div.edit-product-wrapper div.tabs ul li.active a {\n          text-decoration: underline;\n          color: #fff; }\n    div#edit-product div.edit-product-wrapper div.tabs ul li:hover,\n    div#edit-product div.edit-product-wrapper div.tabs ul li:focus {\n      background-color: #888888; }\n      div#edit-product div.edit-product-wrapper div.tabs ul li:hover a,\n      div#edit-product div.edit-product-wrapper div.tabs ul li:focus a {\n        text-decoration: underline;\n        color: #fff; }\n\ndiv#products div.products-wrapper {\n  text-align: center; }\n  div#products div.products-wrapper div.product {\n    display: inline-block;\n    border: solid thin #000;\n    margin: 1em;\n    width: 15em; }\n\ndiv#cart div.cart-wrapper {\n  text-align: center; }\n  div#cart div.cart-wrapper div.costs {\n    display: inline-block; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n\ndiv.login-wrapper {\n  text-align: center; }\n  div.login-wrapper form#loginForm {\n    display: inline-block;\n    margin: 0.5em; }\n\ndiv.payment-wrapper {\n  text-align: center; }\n\ndiv#checkout {\n  margin: 0.5em;\n  text-align: center; }\n  div#checkout div#form-container {\n    display: inline-block;\n    width: 12em; }\n  div#checkout div.product-info div.product p.productImg {\n    width: 20em;\n    overflow: hidden;\n    display: inline-block; }\n    div#checkout div.product-info div.product p.productImg img {\n      transform: rotate(90deg); }\n  div#checkout div.product-info div.product p.qty {\n    display: inline-block; }\n\ndiv.register-wrapper {\n  text-align: center; }\n  div.register-wrapper form#create-customer {\n    display: inline-block;\n    margin: 0.5em; }\n\ndiv.contact-wrapper {\n  text-align: center; }\n  div.contact-wrapper form#contact {\n    display: inline-block;\n    margin: 0.5em; }\n", ""]);
+exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n    nav.topNav ul li.logo {\n      width: 5em; }\n      nav.topNav ul li.logo a {\n        padding: 0; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 100%;\n    display: table-row; }\n    nav.topNav ul.right li {\n      display: table-cell;\n      height: 4em;\n      margin: 0.5em;\n      list-style-type: none;\n      vertical-align: middle; }\n      nav.topNav ul.right li a {\n        display: table-cell;\n        vertical-align: middle;\n        height: 3em; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 25em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n  div.products-wrapper div.product-card h1.name a {\n    text-decoration: none; }\n  div.products-wrapper div.product-card p.productImg {\n    overflow: hidden; }\n    div.products-wrapper div.product-card p.productImg img {\n      transform: rotate(90deg); }\n\ndiv.product-wrapper div.product-head {\n  text-align: center; }\n  div.product-wrapper div.product-head p, div.product-wrapper div.product-head h1 {\n    display: inline-block; }\n\ndiv.product-wrapper div.product-info {\n  position: relative; }\n  div.product-wrapper div.product-info div.left,\n  div.product-wrapper div.product-info div.right {\n    width: 45%;\n    display: inline-block; }\n  div.product-wrapper div.product-info div.left p.productImg {\n    overflow: hidden; }\n    div.product-wrapper div.product-info div.left p.productImg img {\n      transform: rotate(90deg); }\n  div.product-wrapper div.product-info div.right {\n    position: absolute;\n    text-align: center;\n    top: 50%;\n    -ms-transform: translateY(-50%);\n    transform: translateY(-50%); }\n    div.product-wrapper div.product-info div.right h1.name {\n      margin-bottom: 0;\n      display: inline-block; }\n    div.product-wrapper div.product-info div.right p.sku {\n      margin: 0;\n      font-size: 0.7em;\n      display: inline-block; }\n    div.product-wrapper div.product-info div.right form#product-order input#qty {\n      width: 2em; }\n\ndiv.product-wrapper div.product-foot {\n  text-align: center; }\n  div.product-wrapper div.product-foot p.description {\n    font-size: 1.5em; }\n\ndiv#edit-product {\n  position: relative; }\n  div#edit-product div.adminNav {\n    display: inline-block;\n    width: 10em; }\n    div#edit-product div.adminNav nav#adminNav {\n      position: absolute;\n      top: 0; }\n      div#edit-product div.adminNav nav#adminNav ul {\n        padding-left: 0.5em; }\n        div#edit-product div.adminNav nav#adminNav ul li {\n          list-style-type: none;\n          padding: 0.5em; }\n          div#edit-product div.adminNav nav#adminNav ul li a {\n            color: #000;\n            text-decoration: none; }\n        div#edit-product div.adminNav nav#adminNav ul li:hover,\n        div#edit-product div.adminNav nav#adminNav ul li:focus {\n          background-color: #888888; }\n          div#edit-product div.adminNav nav#adminNav ul li:hover a,\n          div#edit-product div.adminNav nav#adminNav ul li:focus a {\n            text-decoration: underline;\n            color: #fff; }\n  div#edit-product div.edit-product-wrapper {\n    display: inline-block;\n    margin: 0.5em; }\n    div#edit-product div.edit-product-wrapper div.tabs ul {\n      display: table-row;\n      height: 2em; }\n      div#edit-product div.edit-product-wrapper div.tabs ul li {\n        height: 100%;\n        display: table-cell;\n        padding: 0.5em;\n        list-style-type: none;\n        vertical-align: middle; }\n        div#edit-product div.edit-product-wrapper div.tabs ul li a {\n          color: #000;\n          display: table-cell;\n          text-decoration: none;\n          vertical-align: middle;\n          height: 100%; }\n      div#edit-product div.edit-product-wrapper div.tabs ul li.active {\n        background-color: #888888; }\n        div#edit-product div.edit-product-wrapper div.tabs ul li.active a {\n          text-decoration: underline;\n          color: #fff; }\n    div#edit-product div.edit-product-wrapper div.tabs ul li:hover,\n    div#edit-product div.edit-product-wrapper div.tabs ul li:focus {\n      background-color: #888888; }\n      div#edit-product div.edit-product-wrapper div.tabs ul li:hover a,\n      div#edit-product div.edit-product-wrapper div.tabs ul li:focus a {\n        text-decoration: underline;\n        color: #fff; }\n\ndiv#products div.products-wrapper {\n  text-align: center; }\n  div#products div.products-wrapper div.product {\n    display: inline-block;\n    border: solid thin #000;\n    margin: 1em;\n    width: 15em; }\n\ndiv#profile {\n  display: flex;\n  justify-content: center; }\n  div#profile div.customer,\n  div#profile div.address-wrapper {\n    border: solid thin #000;\n    width: 20em;\n    margin: 1em;\n    position: relative; }\n    div#profile div.customer h2,\n    div#profile div.customer p,\n    div#profile div.address-wrapper h2,\n    div#profile div.address-wrapper p {\n      margin: 0.5em; }\n    div#profile div.customer h2,\n    div#profile div.address-wrapper h2 {\n      text-align: center; }\n    div#profile div.customer p.edit-profile,\n    div#profile div.customer p.edit-address,\n    div#profile div.address-wrapper p.edit-profile,\n    div#profile div.address-wrapper p.edit-address {\n      position: absolute;\n      top: 0;\n      right: 0; }\n\ndiv#cart div.cart-wrapper {\n  text-align: center; }\n  div#cart div.cart-wrapper div.costs {\n    display: inline-block; }\n\ndiv#cart ul.cart li.cart-item p {\n  display: inline-block;\n  width: 24%; }\n\ndiv.login-wrapper {\n  text-align: center; }\n  div.login-wrapper form#loginForm {\n    display: inline-block;\n    margin: 0.5em; }\n\ndiv.payment-wrapper {\n  text-align: center; }\n\ndiv#checkout {\n  margin: 0.5em;\n  text-align: center; }\n  div#checkout div#form-container {\n    display: inline-block;\n    width: 12em; }\n  div#checkout div.product-info div.product p.productImg {\n    width: 20em;\n    overflow: hidden;\n    display: inline-block; }\n    div#checkout div.product-info div.product p.productImg img {\n      transform: rotate(90deg); }\n  div#checkout div.product-info div.product p.qty {\n    display: inline-block; }\n\ndiv.register-wrapper {\n  text-align: center; }\n  div.register-wrapper form#create-customer {\n    display: inline-block;\n    margin: 0.5em; }\n\ndiv.contact-wrapper {\n  text-align: center; }\n  div.contact-wrapper form#contact {\n    display: inline-block;\n    margin: 0.5em; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11434,6 +11434,131 @@ const Product = function() {
 
 /***/ }),
 
+/***/ "./src/js/Profile.js":
+/*!***************************!*\
+  !*** ./src/js/Profile.js ***!
+  \***************************/
+/*! exports provided: Profile */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Profile", function() { return Profile; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const Profile = function() {
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("div#profile div.customer p.edit-profile button").click(function (event) {
+        event.preventDefault();
+
+        if(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text() === "Edit") {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text("Finish Editing");
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.nickname span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.givenName span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.familyName span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.email span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.phone span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.birthday span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.note span").attr("contenteditable", true);
+        } else {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text("Edit");
+            let nickname = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.nickname span").text();
+            let givenName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.givenName span").text();
+            let familyName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.familyName span").text();
+            let email = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.email span").text();
+            let phone = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.phone span").text();
+            let birthday = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.birthday span").text();
+            let note = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.note span").text();
+            let customerId = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.customer p.id span").text();
+
+            let msg = "Change Profile\nNickname = "+nickname+"\nGiven Name = "+givenName+"\nFamily Name = "+familyName+"\nEmail = "+email+"\nPhone = "+phone+"\nBirthday = "+birthday+"\nNote = "+note+"\n";
+            if(confirm(msg)) {
+                jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+                    url: 'post/update-profile.php',
+                    data: {
+                        customerId: customerId,
+                        nickname: nickname,
+                        givenName: givenName,
+                        familyName: familyName,
+                        email: email,
+                        phone: phone,
+                        birthday: birthday,
+                        note: note
+                    },
+                    type: "POST",
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                });
+            } else {
+                window.location.reload();
+            }
+        }
+    });
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()("div#profile div.address-wrapper p.edit-address button").click(function(event) {
+        event.preventDefault();
+
+        if(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text() === "Edit") {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text("Finish Editing");
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.first_name span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.last_name span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.address1 span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.address2 span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.state span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.city span").attr("contenteditable", true);
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.postal_code span").attr("contenteditable", true);
+        } else {
+            jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).text("Edit");
+            let firstName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.first_name span").text();
+            let lastName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.last_name span").text();
+            let address1 = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.address1 span").text();
+            let address2 = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.address2 span").text();
+            let state = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.state span").text();
+            let city = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.city span").text();
+            let postalCode = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper p.postal_code span").text();
+            let customerId = jquery__WEBPACK_IMPORTED_MODULE_0___default()("div.address-wrapper").attr("id");
+
+            let msg = "Change Address\nFirst Name = "+firstName+"\nLast Name = "+lastName+"\nAddress1 = "+address1+"\nAddress2 = "+address2+"\nState = "+state+"\nCity = "+city+"\nPostal Code = "+postalCode+"\n";
+            if(confirm(msg)) {
+                jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+                    url: 'post/update-address.php',
+                    data: {
+                        customerId: customerId,
+                        firstName: firstName,
+                        lastName: lastName,
+                        address1: address1,
+                        address2: address2,
+                        state: state,
+                        city: city,
+                        postalCode: postalCode
+                    },
+                    type: "POST",
+                    success: function (data) {
+                        console.log("success");
+                        console.log(data);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                });
+            } else {
+                window.location.reload();
+            }
+        }
+    });
+};
+
+/***/ }),
+
 /***/ "./src/js/Register.js":
 /*!****************************!*\
   !*** ./src/js/Register.js ***!
@@ -11507,6 +11632,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Register */ "./src/js/Register.js");
 /* harmony import */ var _AddProduct__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./AddProduct */ "./src/js/AddProduct.js");
 /* harmony import */ var _EditProduct__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./EditProduct */ "./src/js/EditProduct.js");
+/* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Profile */ "./src/js/Profile.js");
+
 
 
 
@@ -11527,6 +11654,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Register__WEBPACK_IMPORTED_MODULE_6__["Register"]();
     new _AddProduct__WEBPACK_IMPORTED_MODULE_7__["AddProduct"]();
     new _EditProduct__WEBPACK_IMPORTED_MODULE_8__["EditProduct"]();
+    new _Profile__WEBPACK_IMPORTED_MODULE_9__["Profile"]();
 });
 
 /***/ }),
