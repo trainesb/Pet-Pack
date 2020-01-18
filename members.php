@@ -1,7 +1,7 @@
 <?php
 $open = true;
 require 'lib/site.inc.php';
-$view = new View\HomeView($site, $user, $api_client);
+$view = new View\Members($site, $user, $api_client);
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ $view = new View\HomeView($site, $user, $api_client);
 
 <body>
 <?php echo $view->nav(); ?>
-<div id="home">
+<div id="members">
     <?php echo $view->present(); ?>
 </div>
 <?php echo $view->footer(); ?>

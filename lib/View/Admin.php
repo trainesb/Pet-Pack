@@ -28,7 +28,7 @@ class Admin extends View {
 <nav id='adminNav'>
     <ul>
         <li><a href="./add-product.php">Add a Product</a></li>
-        <li><a href="">Members</a></li>
+        <li><a href="./members.php">Members</a></li>
         <li><a href="./products.php">Products</a></li>
     </ul>
 </nav>
