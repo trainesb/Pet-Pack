@@ -26,12 +26,14 @@ class CheckoutController {
             return;
         }
 
+        $price = $_POST['price']*100;
+
         $payments_api = new \SquareConnect\Api\PaymentsApi($api_client);
 
         $request_body = array (
             "source_id" => $nonce,
             "amount_money" => array (
-                "amount" => 10000,
+                "amount" => $price,
                 "currency" => "USD"
             ),
             "shipping_address" => array(

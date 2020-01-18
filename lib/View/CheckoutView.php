@@ -3,10 +3,6 @@
 
 namespace View;
 
-
-use API\AddressTable;
-use Model\Address;
-
 class CheckoutView extends View {
 
     private $cart;
@@ -26,8 +22,6 @@ class CheckoutView extends View {
         }
 
         $id = $user->getId();
-        $addresses = new AddressTable($site);
-        $this->address = $addresses->getByUser($id)[0];
     }
 
     public function present() {
