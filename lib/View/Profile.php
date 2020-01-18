@@ -14,6 +14,9 @@ class Profile extends View {
     public function __construct(Site $site, User $user = null, $api_client = null) {
         parent::__construct($site, $user, $api_client);
 
+        if(!$user->isMember()) { header("location: ".$this->getProtectRedirect()); }
+
+        $this->setTitle("Profile");
         $customersApi = new \SquareConnect\Api\CustomersApi($api_client);
         $this->customer = $customersApi->retrieveCustomer($user->getCustomerId());
     }
