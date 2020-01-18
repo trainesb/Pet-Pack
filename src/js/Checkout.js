@@ -53,9 +53,26 @@ export const Checkout = function() {
                     }
                     alert(`The generated nonce is:\n${nonce}`);
 
+                    let firstName = $("input#first-name").text();
+                    let lastName = $("input#last-name").text();
+                    let address1 = $("input#address1").text();
+                    let address2 = $("input#address2").text();
+                    let city = $("input#city").text();
+                    let state = $("input#state").text();
+                    let zip = $("input#zip").text();
+
                     $.ajax({
                         url: 'post/checkout.php',
-                        data: {nonce: nonce},
+                        data: {
+                            nonce: nonce,
+                            firstName: firstName,
+                            lastName: lastName,
+                            address1: address1,
+                            address2: address2,
+                            city: city,
+                            state: state,
+                            zip: zip
+                        },
                         type: 'POST',
                         success: function(data) {
                             console.log(JSON.stringify(data));

@@ -10,12 +10,17 @@ class OrderTable extends Table {
         parent::__construct($site, "order");
     }
 
-    public function add($order) {
-        $sql = 'INSERT INTO '.$this->tableName.' (userId, shippingId, cardId, productId, date, cost, isPaid, isShipped, isFulfilled) VALUES (?, ?, ?, ?, ?, true, false, false)';
+    public function addOrder($userId, $paymentId) {
+        print_r($userId);
+        print_r($paymentId);
+        $sql = <<<SQL
+INSERT INTO $this->tableName (userId, paymentId) VALUES (?, ?)
+SQL;
         $pdo = $this->pdo();
         $statement = $pdo->prepare($sql);
-
-        if($statement->execute(array($order['userId'], $order['shippingId'], $order["cardId"], $order["productId"], $order["date"], $order["cost"]))) {
+        $ex = $statement->execute(array($userId, $paymentId));
+        print_r($ex);
+        if($ex) {
             return null;
         }
     }

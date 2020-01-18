@@ -11220,9 +11220,26 @@ const Checkout = function() {
                     }
                     alert(`The generated nonce is:\n${nonce}`);
 
+                    let firstName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#first-name").text();
+                    let lastName = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#last-name").text();
+                    let address1 = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#address1").text();
+                    let address2 = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#address2").text();
+                    let city = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#city").text();
+                    let state = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#state").text();
+                    let zip = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#zip").text();
+
                     jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
                         url: 'post/checkout.php',
-                        data: {nonce: nonce},
+                        data: {
+                            nonce: nonce,
+                            firstName: firstName,
+                            lastName: lastName,
+                            address1: address1,
+                            address2: address2,
+                            city: city,
+                            state: state,
+                            zip: zip
+                        },
                         type: 'POST',
                         success: function(data) {
                             console.log(JSON.stringify(data));

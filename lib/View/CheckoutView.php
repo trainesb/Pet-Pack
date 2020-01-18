@@ -36,12 +36,11 @@ class CheckoutView extends View {
         $user = $this->getUser();
         echo '<div id="checkout" class="'.$user->getId().'">';
         echo $this->nav();
-        echo '<button class="submit-checkout">Finish Checkout</button>';
         echo $this->address();
         echo $this->payment();
         echo $this->product();
         echo $this->total();
-        echo '<button class="submit-checkout">Finish Checkout</button>';
+        echo '<button id="sq-creditcard" class="button-credit-card">Pay</button>';
         echo '</div>';
         echo $this->footer();
     }
@@ -56,21 +55,38 @@ HTML;
     }
 
     public function address() {
-        $address = new Address($this->address);
-        $id = $address->getId();
-        $name = $address->getFullName();
-        $address1 =  $address->getAddress1();
-        $city = $address->getCity();
-        $state = $address->getState();
-        $zip = $address->getZip();
-
         return <<<HTML
-<div id="$id" class="address">
+<div class="address">
     <h2>Shipping Address</h2>
     <hr>
-    <p class="name">$name</p>
-    <p class="address1">$address1</p>
-    <p class="city state zip">$city, $state $zip</p>
+    <p>
+        <label for="first-name">First Name: </label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+    </p>
+    <p>
+        <label for="last-name">Last Name: </label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+    </p>
+    <p>
+        <label for="address1">Address1: </label>
+        <input type="text" id="address1" name="address1" placeholder="Address1">
+    </p>
+    <p>
+        <label for="address2">Address2: </label>
+        <input type="text" id="address2" name="address2" placeholder="Address2">
+    </p>
+    <p>
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city" placeholder="City">
+    </p>
+    <p>
+        <label for="state">State: </label>
+        <input type="text" id="state" name="state" placeholder="State">
+    </p>
+    <p>
+        <label for="zip">Zip: </label>
+        <input type="text" id="zip" name="zip" placeholder="Zip">
+    </p>
 </div>
 <hr>
 HTML;
@@ -84,7 +100,6 @@ HTML;
     <div class="third" id="sq-expiration-date"></div>
     <div class="third" id="sq-cvv"></div>
     <div class="third" id="sq-postal-code"></div>
-    <button id="sq-creditcard" class="button-credit-card">Pay $1.00</button>
 </div>
 HTML;
     }
