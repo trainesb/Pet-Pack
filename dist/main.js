@@ -11227,6 +11227,7 @@ const Checkout = function() {
                     let city = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#city").text();
                     let state = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#state").text();
                     let zip = jquery__WEBPACK_IMPORTED_MODULE_0___default()("input#zip").text();
+                    let price = jquery__WEBPACK_IMPORTED_MODULE_0___default()("span#totalCost").text();
 
                     jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
                         url: 'post/checkout.php',
@@ -11238,7 +11239,8 @@ const Checkout = function() {
                             address2: address2,
                             city: city,
                             state: state,
-                            zip: zip
+                            zip: zip,
+                            price: price
                         },
                         type: 'POST',
                         success: function(data) {

@@ -60,6 +60,7 @@ export const Checkout = function() {
                     let city = $("input#city").text();
                     let state = $("input#state").text();
                     let zip = $("input#zip").text();
+                    let price = $("span#totalCost").text();
 
                     $.ajax({
                         url: 'post/checkout.php',
@@ -71,7 +72,8 @@ export const Checkout = function() {
                             address2: address2,
                             city: city,
                             state: state,
-                            zip: zip
+                            zip: zip,
+                            price: price
                         },
                         type: 'POST',
                         success: function(data) {
