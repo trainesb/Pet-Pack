@@ -37,9 +37,46 @@ class EditProduct extends View {
         echo $this->discountData();
         echo $this->itemOptionData();
         echo $this->itemOptionValue();
+        echo $this->measurementUnit();
+        echo $this->modifierData();
         echo "</div>";
     }
 
+    public function measurementUnit() {
+        $catalogObject = $this->catalogObject->getObject();
+        $measurement = $catalogObject->getMeasurementUnitData();
+        if($measurement) {
+            $measurementUnit = $measurement->getMeasurementUnit();
+            $precision = $measurement->getPrecision();
+        } else {
+            $measurementUnit = null;
+            $precision = null;
+        }
+        return <<<HTML
+<div class="measurement-unit-data" hidden>
+    <p class="measurement-unit">Measurement Unit: $measurementUnit</p>
+    <p class="precision">Precision: $precision</p>
+</div>
+HTML;
+    }
+
+    public function modifierData() {
+        $catalogObject = $this->catalogObject->getObject();
+        $modifier = $catalogObject->getModifierListData();
+        if($modifier) {
+            $name = $modifier->getName();
+            $modifiers = $modifier->getModifiers();
+        } else {
+            $name = null;
+            $modifiers = null;
+        }
+        return <<<HTML
+<div class="modifier-data" hidden>
+    <p class="name">Name $name</p>
+    <p class="modifiers">Modifiers: $modifiers</p>
+</div>
+HTML;
+    }
 
     public function tabs() {
         return <<<HTML

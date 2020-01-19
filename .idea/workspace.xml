@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Controller/UpdateAddressController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Controller/UpdateProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/update-address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/update-profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/Profile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/UpdateAddressController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/UpdateProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/UpdateProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/EditProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/EditProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/post/update-address.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,8 @@
       <workItem from="1579001770556" duration="4543000" />
       <workItem from="1579113632283" duration="35921000" />
       <workItem from="1579284238588" duration="1817000" />
-      <workItem from="1579307916469" duration="41060000" />
+      <workItem from="1579307916469" duration="44137000" />
+      <workItem from="1579464824424" duration="2186000" />
     </task>
     <servers />
   </component>
@@ -118,7 +117,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
