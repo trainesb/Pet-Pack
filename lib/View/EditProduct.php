@@ -10,6 +10,8 @@ use Model\User;
 class EditProduct extends View {
 
     private $catalogObject;
+    private $productId;
+    private $version;
 
     public function __construct(Site $site, User $user = null, $api_client = null) {
         parent::__construct($site, $user, $api_client);
@@ -19,8 +21,11 @@ class EditProduct extends View {
         }
         $this->setTitle("Edit Product");
 
+        $this->productId = $_GET['id'];
+
         $catalogApi = new \SquareConnect\Api\CatalogApi($api_client);
-        $this->catalogObject = $catalogApi->retrieveCatalogObject($_GET["id"]);
+        $this->catalogObject = $catalogApi->retrieveCatalogObject($this->productId);
+        $this->version = $this->catalogObject->getObject()->getVersion();
     }
 
     public function present() {
@@ -42,6 +47,7 @@ class EditProduct extends View {
         echo "</div>";
     }
 
+
     public function measurementUnit() {
         $catalogObject = $this->catalogObject->getObject();
         $measurement = $catalogObject->getMeasurementUnitData();
@@ -54,8 +60,9 @@ class EditProduct extends View {
         }
         return <<<HTML
 <div class="measurement-unit-data" hidden>
-    <p class="measurement-unit">Measurement Unit: $measurementUnit</p>
-    <p class="precision">Precision: $precision</p>
+    <p class="update-measurement-unit-data"><button>Update Measurement</button></p>
+    <p class="measurement-unit" contenteditable="true">Measurement Unit: $measurementUnit</p>
+    <p class="precision" contenteditable="true">Precision: $precision</p>
 </div>
 HTML;
     }
@@ -72,8 +79,9 @@ HTML;
         }
         return <<<HTML
 <div class="modifier-data" hidden>
-    <p class="name">Name $name</p>
-    <p class="modifiers">Modifiers: $modifiers</p>
+    <p class="update-modifier-data"><button>Modifier Data</button></p>
+    <p class="name" contenteditable="true">Name $name</p>
+    <p class="modifiers" contenteditable="true">Modifiers: $modifiers</p>
 </div>
 HTML;
     }
@@ -134,9 +142,29 @@ HTML;
         }
             return <<<HTML
 <div class="image-data" hidden>
-    <p class="caption">Caption: $caption</p>
-    <p class="name">Name: $name</p>
-    <p class="url">URL: $url</p>
+    <form id="productImage" class="$this->productId" version="$this->version" method="post" enctype="multipart/form-data">
+        <p>
+            Select image to upload:
+            <input type="file" name="product-image" id="product-image">
+        </p>
+        
+        <p>
+            <label for="caption">Caption: </label>
+            <input type="text" name="caption" id="caption" placeholder="$caption">
+        </p>
+        
+        <p>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="$name">
+        </p>
+        
+        <p>
+            <label for="url">URL: </label>
+            <input type="text" id="url" name="url" placeholder="$url">
+        </p>
+        
+        <p><input type="submit" value="Save"></p>
+    </form>
 </div>
 HTML;
     }
@@ -150,9 +178,10 @@ HTML;
 
         return <<<HTML
 <div class="item-data" hidden>
-    <p class="name">Name: $name</p>
-    <p class="description">Description: $description</p>
-    <p class="abbreviation">Abbreviation: $abbreviation</p>
+    <p class="update-item-data"><button>Update Item</button></p>
+    <p class="name" contenteditable="true">Name: $name</p>
+    <p class="description" contenteditable="true">Description: $description</p>
+    <p class="abbreviation" contenteditable="true">Abbreviation: $abbreviation</p>
 </div>
 HTML;
     }
@@ -177,13 +206,14 @@ HTML;
 
                 $html .= <<<HTML
 <div class="item-variation">
-    <p class="type">Type: $type</p>
-    <p class="id">Id: $id</p>
-    <p class="itemId">Item Id: $item_id</p>
-    <p class="name">Name: $name</p>
-    <p class="sku">Sku: $sku</p>
-    <p class="price">Price: $$price</p>
-    <p class="currency">Currency: $currency</p>
+    <p class="update-variations"><button>Update Variations</button></p>
+    <p class="type" contenteditable="true">Type: $type</p>
+    <p class="id" contenteditable="true">Id: $id</p>
+    <p class="itemId" contenteditable="true">Item Id: $item_id</p>
+    <p class="name" contenteditable="true">Name: $name</p>
+    <p class="sku" contenteditable="true">Sku: $sku</p>
+    <p class="price" contenteditable="true">Price: $$price</p>
+    <p class="currency" contenteditable="true">Currency: $currency</p>
 </div>
 HTML;
             }
@@ -214,12 +244,13 @@ HTML;
         }
         return <<<HTML
 <div class="discount-data" hidden>
-    <p class="amount">Amount: $$amount</p>
-    <p class="currency">Currency: $currency</p>
-    <p class="discount-type">Discount Type: $discountType</p>
-    <p class="name">Name: $name</p>
-    <p class="percentage">Percentage: $percentage</p>
-    <p class="pin-required">PIN Required: $pinRequired</p>
+    <p class="update-discount-data"><button>Update Discount</button></p>
+    <p class="amount" contenteditable="true">Amount: $$amount</p>
+    <p class="currency" contenteditable="true">Currency: $currency</p>
+    <p class="discount-type" contenteditable="true">Discount Type: $discountType</p>
+    <p class="name" contenteditable="true">Name: $name</p>
+    <p class="percentage" contenteditable="true">Percentage: $percentage</p>
+    <p class="pin-required" contenteditable="true">PIN Required: $pinRequired</p>
 </div>
 HTML;
     }
@@ -240,10 +271,11 @@ HTML;
         }
         return <<<HTML
 <div class="item-option-data" hidden>
-    <p class="description">Description: $description</p>
-    <p class="display-name">Display Name: $display_name</p>
-    <p class="item-count">Item Count: $item_count</p>
-    <p class="name">Name: $name</p>
+    <p class="update-item-option"><button>Update Item Option</button></p>
+    <p class="description" contenteditable="true">Description: $description</p>
+    <p class="display-name" contenteditable="true">Display Name: $display_name</p>
+    <p class="item-count" contenteditable="true">Item Count: $item_count</p>
+    <p class="name" contenteditable="true">Name: $name</p>
 </div>
 HTML;
     }
@@ -266,9 +298,10 @@ HTML;
         }
         return <<<HTML
 <div class="option-value-data" hidden>
-    <p class="description">Description: $description</p>
+    <p class="update-option-value"><button>Update Option Value</button></p>
+    <p class="description" contenteditable="true">Description: $description</p>
     <p class="itemOptionId">Item Option Id: $itemOptionId</p>
-    <p class="name">Name: $name</p>
+    <p class="name" contenteditable="true">Name: $name</p>
 </div>
 HTML;
     }

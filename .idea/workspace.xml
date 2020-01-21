@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/Controller/EditProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post/edit-product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/UpdateAddressController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/UpdateProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/UpdateProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/AddProductController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/EditProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/EditProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/Profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/update-address.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/EditProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/EditProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_edit-product.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_edit-product.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,10 @@
       <workItem from="1579113632283" duration="35921000" />
       <workItem from="1579284238588" duration="1817000" />
       <workItem from="1579307916469" duration="44137000" />
-      <workItem from="1579464824424" duration="2186000" />
+      <workItem from="1579464824424" duration="3124000" />
+      <workItem from="1579481074242" duration="2240000" />
+      <workItem from="1579495900874" duration="9048000" />
+      <workItem from="1579633407763" duration="598000" />
     </task>
     <servers />
   </component>
@@ -162,14 +164,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2240" y="-149" key="FileChooserDialogImpl/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579284919409" />
-    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1579365599407">
+    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1579504196365">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579365599407" />
-    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579365464234">
+    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579504196365" />
+    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579504162084">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579365464234" />
+    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579504162084" />
     <state x="1963" y="203" key="SettingsEditor" timestamp="1578719378761">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
