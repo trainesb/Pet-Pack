@@ -71,12 +71,13 @@ SQL;
         $salt = $this->randomSalt();
         $hash = $this->hashPassword($user["password"], $salt);
 
-        $sql = "INSERT INTO ".$this->tableName." (username, password, salt, email, joined, role) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO ".$this->tableName." (customerId, username, password, salt, email, role) VALUES (?, ?, ?, ?, ?, ?)";
         $pdo = $this->pdo();
         $statement = $pdo->prepare($sql);
-        if(!$statement->execute(array($user['username'], $hash, $salt, $user['email'], date("Y-m-d H:i:s"), "M"))) {
-            return null;
+        if(!$statement->execute(array($user['customerId'], $user['username'], $hash, $salt, $user['email'], "M"))) {
+            return false;
         }
+        return true;
     }
 
     public function hashPassword($password, $salt) {

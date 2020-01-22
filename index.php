@@ -1,13 +1,19 @@
 <?php
 $open = true;
 require 'lib/site.inc.php';
-$view = new View\HomeView($site, $user);
+$view = new View\Home($site, $user);
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+<?php echo $view->head(); ?>
+<body>
+    <?php echo $view->nav(); ?>
 
-<?php echo $view->present(); ?>
+    <div class="home">
 
+    </div>
+
+    <?php echo $view->footer(); ?>
 </body>
 </html>
