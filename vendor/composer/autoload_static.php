@@ -11,6 +11,10 @@ class ComposerStaticInitee8d971305be4afea586aab5e72d1262
         array (
             'View\\' => 5,
         ),
+        'S' => 
+        array (
+            'Stripe\\' => 7,
+        ),
         'M' => 
         array (
             'Model\\' => 6,
@@ -33,6 +37,10 @@ class ComposerStaticInitee8d971305be4afea586aab5e72d1262
         'View\\' => 
         array (
             0 => __DIR__ . '/../..' . '/lib/View',
+        ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
         'Model\\' => 
         array (

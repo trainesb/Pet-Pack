@@ -4,7 +4,9 @@ require __DIR__ . "/../vendor/autoload.php";
 define("LOGIN_COOKIE", "epetpack_cookie");
 
 $site = new Model\Site();
-$cart = new Model\Cart();
+
+\Stripe\Stripe::setApiKey("sk_test_9I5cObC7c0PdbDiTFgVY9G4T00w7IIhLm1");
+
 $localize = require 'localize.inc.php';
 
 if(is_callable($localize)) {

@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/API/OrderTable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/post/checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/Checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add-product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Controller/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Controller/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/View/AddProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/View/Products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/post/add-product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/CheckoutView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/CheckoutView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/partials/_profile.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +29,9 @@
       <executable path="composer" />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="petpack" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -33,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -44,6 +53,7 @@
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="ProjectId" id="1WEOIv5cgfOw03pKxlgUmUNtJvq" />
@@ -100,6 +110,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="2068" y="-321" key="#Notifications" timestamp="1578711222387">
       <screen x="1920" y="-853" width="1080" height="1880" />
@@ -109,14 +130,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2246" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578731136046" />
-    <state x="1920" y="-44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578972625779">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579655269959">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="1920" y="-44" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578972625779" />
-    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578969529376">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579655269959" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579658242824">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578969529376" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579658242824" />
     <state x="2192" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578734494365">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
@@ -133,14 +154,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2240" y="-149" key="FileChooserDialogImpl/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578982824130" />
-    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1578996993179">
+    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1579668573029">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578996993179" />
-    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1578996892566">
+    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579668573029" />
+    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579668553961">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578996892566" />
+    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579668553961" />
     <state x="1963" y="203" key="SettingsEditor" timestamp="1578719378761">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
@@ -149,9 +170,9 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2116" y="30" key="run.anything.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578976458356" />
-    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup" timestamp="1578992224431">
+    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup" timestamp="1579656587511">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578992224431" />
+    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579656587511" />
   </component>
 </project>

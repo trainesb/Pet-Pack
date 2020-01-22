@@ -4,26 +4,34 @@
 namespace Controller;
 
 
-use API\ProductTable;
-use Model\Product;
+use Model\Site;
+use Stripe\Exception\ApiErrorException;
 
-class ProductController {
+class ProductController extends Controller {
 
-    private $result;
-
-    public function __construct($site) {
-        if(isset($_SESSION['cart'])) {
-            $cart = $_SESSION['cart'];
-
-            $products = new ProductTable($site);
-            $product = $products->getById($_POST['id']);
-            $product = new Product($product);
-            $cart->addToCart($_POST['name'], $product, $_POST['qty']);
-            $this->result = json_encode(["ok" => true]);
-            return;
-        }
-        $this->result = json_encode(["ok" => false, "message" => "Error adding to cart!"]);
+    public function __construct(Site $site, $method) {
+        parent::__construct($method);
     }
 
-    public function getResult() { return $this->result; }
+    protected function add() {
+        try {
+            $product = \Stripe\Product::create([
+                'name' => $_POST['name'],
+                'type' => 'good',
+                'caption' => $_POST['caption'],
+                'description' => $_POST['description']
+            ]);
+            return true;
+        } catch (ApiErrorException $e) {
+            return false;
+        }
+    }
+
+    protected function delete() {
+
+    }
+
+    protected function update() {
+    }
+
 }

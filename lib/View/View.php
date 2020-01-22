@@ -22,14 +22,11 @@ class View {
             if($user->isAdmin()) {
                 $this->addLink("./admin.php", "Admin");
             }
-            $this->addLink("./product.php?name=Cat Pack&id=19", "Pre-Order");
             $this->addLink("./contact-us.php", "Contact Us");
             $this->addLink("./profile.php", "Profile");
-            $this->addLink("./cart.php", "Cart");
             $this->addLink("post/logout.php", "Log Out");
         } else {
             $this->addLink("./contact-us.php", "Contact Us");
-            $this->addLink("./cart.php", "Cart");
             $this->addLink("./login.php", "Login");
         }
     }
