@@ -97,7 +97,7 @@
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n", ""]);
+exports.push([module.i, "img {\n  width: 100%; }\n\nfooter {\n  background-color: #000;\n  color: #fff;\n  text-align: center; }\n  footer p {\n    padding: 0.25em 0;\n    margin-top: 0; }\n\nnav.topNav {\n  position: relative;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.topNav ul {\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.topNav ul li {\n      display: inline-block; }\n    nav.topNav ul li a {\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.topNav ul a:hover {\n      background-color: #888; }\n    nav.topNav ul a:visited, nav.topNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.topNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\nnav.adminNav {\n  position: absolute;\n  display: none;\n  right: 12em;\n  background-color: #000;\n  color: #fff;\n  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; }\n  nav.adminNav ul {\n    text-align: left;\n    font-size: 1.2em;\n    list-style: none;\n    margin: 0;\n    padding: 0; }\n    nav.adminNav ul li a {\n      width: 10em;\n      display: block;\n      padding: 0.5em 0.5em; }\n    nav.adminNav ul a:hover {\n      background-color: #888; }\n    nav.adminNav ul a:visited, nav.adminNav ul a:link {\n      color: #fff;\n      text-decoration: none; }\n  nav.adminNav ul.right {\n    position: absolute;\n    right: 0;\n    top: 0; }\n\ndiv.products-wrapper div.product-card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  width: 10em;\n  text-align: center;\n  margin: 1em auto;\n  padding: 0.25em 0; }\n\ndiv#profile {\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  div#profile div.user-card,\n  div#profile div.address-card {\n    margin: 0.5em 3em;\n    padding: 0.5em;\n    border: solid thin #000; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -11110,6 +11110,83 @@ const Login = function() {
 
 /***/ }),
 
+/***/ "./src/js/Profile.js":
+/*!***************************!*\
+  !*** ./src/js/Profile.js ***!
+  \***************************/
+/*! exports provided: Profile */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Profile", function() { return Profile; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const Profile = function() {
+
+    // User Functions
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('button#edit-user').click(function (event) {
+       event.preventDefault();
+
+       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().attr('hidden', true);
+       jquery__WEBPACK_IMPORTED_MODULE_0___default()('form#edit-user-card').attr('hidden', false);
+
+    });
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('button#cancel-user-edit').click(function (event) {
+        event.preventDefault();
+
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().attr('hidden', true);
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('div.user-card').attr('hidden', false);
+    });
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('form#edit-user-card, form#edit-address-card').submit(function (event) {
+       event.preventDefault();
+
+       jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+           url: 'post/edit-user.php',
+           data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
+           method: 'POST',
+           success: function (data) {
+               let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
+               console.log('Success');
+               console.log(json);
+               if(json.ok) {
+                   window.location.reload();
+               }
+           },
+           error: function (xhr, status, err) {
+               console.log('Error');
+               console.log(err);
+           }
+       })
+    });
+
+
+    // Address Functions
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('button#edit-address').click(function (event) {
+       event.preventDefault();
+
+       jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().attr('hidden', true);
+       jquery__WEBPACK_IMPORTED_MODULE_0___default()('form#edit-address-card').attr('hidden', false);
+
+    });
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('button#cancel-address-edit').click(function (event) {
+        event.preventDefault();
+
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().attr('hidden', true);
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('div.address-card').attr('hidden', false);
+    });
+
+};
+
+/***/ }),
+
 /***/ "./src/js/Register.js":
 /*!****************************!*\
   !*** ./src/js/Register.js ***!
@@ -11168,6 +11245,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_Style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scss_Style_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login */ "./src/js/Login.js");
 /* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Register */ "./src/js/Register.js");
+/* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Profile */ "./src/js/Profile.js");
+
 
 
 
@@ -11177,7 +11256,8 @@ __webpack_require__.r(__webpack_exports__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Login__WEBPACK_IMPORTED_MODULE_2__["Login"]();
-    new _Register__WEBPACK_IMPORTED_MODULE_3__["Register"]()
+    new _Register__WEBPACK_IMPORTED_MODULE_3__["Register"]();
+    new _Profile__WEBPACK_IMPORTED_MODULE_4__["Profile"]();
 });
 
 /***/ }),

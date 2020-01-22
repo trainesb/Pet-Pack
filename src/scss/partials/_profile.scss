@@ -1,0 +1,12 @@
+div#profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div.user-card,
+  div.address-card {
+    margin: 0.5em 3em;
+    padding: 0.5em;
+    border: solid thin #000;
+  }
+}
