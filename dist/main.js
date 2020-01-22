@@ -11110,6 +11110,49 @@ const Login = function() {
 
 /***/ }),
 
+/***/ "./src/js/Product.js":
+/*!***************************!*\
+  !*** ./src/js/Product.js ***!
+  \***************************/
+/*! exports provided: Product */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product", function() { return Product; });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _parse_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./parse_json */ "./src/js/parse_json.js");
+
+
+
+const Product = function() {
+
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('form#add-product').submit(function (event) {
+        event.preventDefault();
+
+        jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({
+            url: 'post/add-product.php',
+            data: jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).serialize(),
+            method: 'POST',
+            success: function (data) {
+                let json = Object(_parse_json__WEBPACK_IMPORTED_MODULE_1__["parse_json"])(data);
+                console.log('Success: ', json);
+                if(json.ok) {
+                    window.location.assign('./admin.php');
+                }
+            },
+            error: function (xhr, status, err) {
+                console.error('Error: ');
+                console.log(err);
+            }
+        });
+    });
+
+};
+
+/***/ }),
+
 /***/ "./src/js/Profile.js":
 /*!***************************!*\
   !*** ./src/js/Profile.js ***!
@@ -11246,6 +11289,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login */ "./src/js/Login.js");
 /* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Register */ "./src/js/Register.js");
 /* harmony import */ var _Profile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Profile */ "./src/js/Profile.js");
+/* harmony import */ var _Product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Product */ "./src/js/Product.js");
+
 
 
 
@@ -11258,6 +11303,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     new _Login__WEBPACK_IMPORTED_MODULE_2__["Login"]();
     new _Register__WEBPACK_IMPORTED_MODULE_3__["Register"]();
     new _Profile__WEBPACK_IMPORTED_MODULE_4__["Profile"]();
+    new _Product__WEBPACK_IMPORTED_MODULE_5__["Product"]();
 });
 
 /***/ }),

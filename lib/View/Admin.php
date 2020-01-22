@@ -17,6 +17,8 @@ class Admin extends View {
     }
 
     public function present() {
+        echo '<p><a href="./add-product.php">Add Product</a></p>';
+        echo '<p><a href="./products.php">Products</a></p>';
     }
 
 }

@@ -9,42 +9,18 @@ use Model\Site;
 use Model\User;
 use Stripe\Exception\ApiErrorException;
 
-class UserController {
-
-    const ADD = 'A';
-    const DELETE = 'D';
-    const UPDATE = 'U';
+class UserController extends Controller {
 
     private $users;
     private $user;
-    private $result;
 
     public function __construct(Site $site, User $user,$method) {
+        parent::__construct($method);
         $this->users = new UserTable($site);
         $this->user = $user;
-
-        switch ($method) {
-            case self::ADD:
-                if ($this->add())
-                    $this->result = json_encode(['ok' => true]);
-                else
-                    $this->result = json_encode(['ok' => false, 'message' => 'Error creating new user']);
-                break;
-            case self::DELETE:
-                $this->delete();
-                break;
-            case self::UPDATE:
-                if ($this->update())
-                    $this->result = json_encode(['ok' => true]);
-                else
-                    $this->result = json_encode(['ok' => false, 'message' => 'Error updating user']);
-                break;
-            default:
-                $this->result = json_encode(['ok' => false, 'message' => 'Error unknown method']);
-        }
     }
 
-    private function add() {
+    protected function add() {
         $customer = \Stripe\Customer::create([
             'email' => $_POST['email'],
             'metadata' => ['username' => $_POST['username']],
@@ -61,11 +37,11 @@ class UserController {
         return $this->users->addUser($user);
     }
 
-    private function delete() {
+    protected function delete() {
 
     }
 
-    private function update() {
+    protected function update() {
         if(isset($_POST['city']))
             return $this->updateAddress();
         else
@@ -105,7 +81,5 @@ class UserController {
             return false;
         }
     }
-
-    public function getResult() { return $this->result; }
 
 }
