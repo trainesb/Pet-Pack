@@ -3,7 +3,7 @@ import {parse_json} from './parse_json';
 
 export const Register = function() {
 
-    $('form#register').submit(function (event) {
+    $('form#register-form').submit(function (event) {
         event.preventDefault();
 
         $.ajax({

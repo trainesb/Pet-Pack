@@ -23,6 +23,7 @@ class View {
                 $this->addLink("./admin.php", "Admin");
             }
             $this->addLink("./contact-us.php", "Contact Us");
+            $this->addLink("./profile.php", "Profile");
             $this->addLink("post/logout.php", "Log Out");
         } else {
             $this->addLink("./contact-us.php", "Contact Us");

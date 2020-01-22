@@ -2,83 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a91ad539-5b7d-4c85-8284-c2cfe2ce25f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/petpack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/petpack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/View/Profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-members.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin-reviews.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact-us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/create-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/AddressTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/OrderTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/PaymentCardTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/ProductTable.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/API/UserTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/API/UserTable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/AddAddressController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/AddPaymentController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/AddressController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/CheckoutController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/DeleteProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/DeleteUserController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Controller/ProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Model/Address.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Model/Cart.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Model/PaymentCard.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Model/Product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Model/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/AdminView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/AdminView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/CartView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/CheckoutView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ContactUsView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/ContactUsView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/CreateProductView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/HomeView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/HomeView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/LoginView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/LoginView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/MembersView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProductView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProductsView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/ProfileView.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/View/RegisterView.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/RegisterView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/View/Register.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/Register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/View/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/View/View.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/site.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/site.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/members.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/add-address.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/add-payment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/checkout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/delete-product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/delete-user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/post/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/AdminNav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Checkout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Members.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/Profile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/Style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/Style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_cart.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_members.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_product.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/partials/_profile.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/partials/_admin.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,14 +126,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2246" y="216" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578731136046" />
-    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579653949866">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1579655269959">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579653949866" />
-    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579654971689">
+    <state x="1920" y="-853" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579655269959" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579658242824">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579654971689" />
+    <state x="2190" y="308" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579658242824" />
     <state x="2192" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1578734494365">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
@@ -216,14 +150,14 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2240" y="-149" key="FileChooserDialogImpl/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578982824130" />
-    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1579654100421">
+    <state x="2281" y="360" key="NewPhpClassDialog" timestamp="1579655606577">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579654100421" />
-    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1578996892566">
+    <state x="2281" y="360" key="NewPhpClassDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579655606577" />
+    <state x="2294" y="82" key="NewPhpFileDialog" timestamp="1579655523694">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578996892566" />
+    <state x="2294" y="82" key="NewPhpFileDialog/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579655523694" />
     <state x="1963" y="203" key="SettingsEditor" timestamp="1578719378761">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
@@ -232,9 +166,9 @@
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
     <state x="2116" y="30" key="run.anything.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578976458356" />
-    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup" timestamp="1578992224431">
+    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup" timestamp="1579656587511">
       <screen x="1920" y="-853" width="1080" height="1880" />
     </state>
-    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1578992224431" />
+    <state x="2123" y="-418" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.-853.1080.1880@1920.-853.1080.1880" timestamp="1579656587511" />
   </component>
 </project>

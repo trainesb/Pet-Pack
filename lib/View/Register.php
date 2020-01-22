@@ -17,7 +17,7 @@ class Register extends View {
 
     public function register() {
         return <<<HTML
-<form id="register">
+<form id="register-form">
     <fieldset>
         <legend>Register</legend>
         

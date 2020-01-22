@@ -11128,7 +11128,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Register = function() {
 
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('form#register').submit(function (event) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('form#register-form').submit(function (event) {
         event.preventDefault();
 
         jquery__WEBPACK_IMPORTED_MODULE_0___default.a.ajax({

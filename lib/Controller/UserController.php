@@ -13,11 +13,11 @@ class UserController {
     const DELETE = 'D';
     const UPDATE = 'U';
 
-    private $site;
+    private $users;
     private $result;
 
     public function __construct(Site $site, $method) {
-        $this->site = $site;
+        $this->users = new UserTable($site);
 
         switch ($method) {
             case self::ADD:
@@ -50,9 +50,7 @@ class UserController {
           'password' => $_POST['password']
         ];
 
-
-        $users = new UserTable($this->site);
-        return $users->addUser($user);
+        return $this->users->addUser($user);
     }
 
     private function delete() {

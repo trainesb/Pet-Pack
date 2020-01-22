@@ -1,7 +1,6 @@
 <?php
-$open = true;
 require 'lib/site.inc.php';
-$view = new View\Register($site, $user);
+$view = new View\Profile($site, $user);
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +9,7 @@ $view = new View\Register($site, $user);
 <body>
 <?php echo $view->nav(); ?>
 
-<div id="register">
+<div id="profile">
     <?php echo $view->present(); ?>
 </div>
 
